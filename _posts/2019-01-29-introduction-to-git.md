@@ -1,12 +1,12 @@
 ---
-title:  "Introduction to GIT"
+title:  "Introduction to Git"
 search: true
 categories: 
   - DevOps
   - Git
 last_modified_at: 2019-01-29T08:05:34-05:00
 header:
-  teaser: /assets/images/blog/things-to-do-after-installing-fedora-28.jpeg
+  teaser: /assets/images/blog/introduction-to-git/introduction-to-git.png
 ---
 
 ![Introduction to Git](/assets/images/blog/introduction-to-git/introduction-to-git.png)
