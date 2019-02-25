@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Kernel-based Virtual Machine (KVM) | Sashwat’s Blog</title>
+<!-- begin _includes/seo.html --><title>Introduction to GIT | Sashwat’s Blog</title>
 <meta name="description" content="">
 
 
@@ -17,27 +17,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Sashwat's Blog">
-<meta property="og:title" content="Kernel-based Virtual Machine (KVM)">
-<meta property="og:url" content="https://www.sashwat.in/linux/kvm/intsall-kvm-on-linux/">
+<meta property="og:title" content="Introduction to GIT">
+<meta property="og:url" content="https://www.sashwat.in/devops/git/introduction-to-git/">
 
 
   <meta property="og:description" content="">
 
 
 
-  <meta property="og:image" content="https://www.sashwat.in/assets/images/blog/kernel-based-virtual-machine/kernel-based-virtual-machine.png">
+  <meta property="og:image" content="https://www.sashwat.in/assets/images/blog/things-to-do-after-installing-fedora-28.jpeg">
 
 
 
   <meta name="twitter:site" content="@blackisashu">
-  <meta name="twitter:title" content="Kernel-based Virtual Machine (KVM)">
+  <meta name="twitter:title" content="Introduction to GIT">
   <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="https://www.sashwat.in/linux/kvm/intsall-kvm-on-linux/">
+  <meta name="twitter:url" content="https://www.sashwat.in/devops/git/introduction-to-git/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://www.sashwat.in/assets/images/blog/kernel-based-virtual-machine/kernel-based-virtual-machine.png">
+      <meta name="twitter:image" content="https://www.sashwat.in/assets/images/blog/things-to-do-after-installing-fedora-28.jpeg">
     
   
 
@@ -45,11 +45,11 @@
 
 
 
-  <meta property="article:published_time" content="2019-01-08T00:00:00+05:30">
+  <meta property="article:published_time" content="2019-01-29T00:00:00+05:30">
 
 
 
-  <meta property="article:modified_time" content="2018-01-08T18:35:34+05:30">
+  <meta property="article:modified_time" content="2019-01-29T18:35:34+05:30">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://www.sashwat.in/linux/kvm/intsall-kvm-on-linux/">
+<link rel="canonical" href="https://www.sashwat.in/devops/git/introduction-to-git/">
 
 
 
@@ -182,7 +182,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/categories/#linux" itemprop="item"><span itemprop="name">Linux</span></a>
+          <a href="/categories/#devops" itemprop="item"><span itemprop="name">Devops</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -192,7 +192,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/categories/#kvm" itemprop="item"><span itemprop="name">Kvm</span></a>
+          <a href="/categories/#git" itemprop="item"><span itemprop="name">Git</span></a>
           <meta itemprop="position" content="3" />
         </li>
         <span class="sep">/</span>
@@ -200,7 +200,7 @@
     
       
       
-        <li class="current">Kernel-based Virtual Machine (KVM)</li>
+        <li class="current">Introduction to GIT</li>
       
     
   </ol>
@@ -348,15 +348,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Kernel-based Virtual Machine (KVM)">
+    <meta itemprop="headline" content="Introduction to GIT">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="January 08, 2019">
-    <meta itemprop="dateModified" content="January 08, 2018">
+    <meta itemprop="datePublished" content="January 29, 2019">
+    <meta itemprop="dateModified" content="January 29, 2019">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Kernel-based Virtual Machine (KVM)
+          <h1 id="page-title" class="page__title" itemprop="headline">Introduction to GIT
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -372,95 +372,98 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><img src="/assets/images/blog/kernel-based-virtual-machine/kernel-based-virtual-machine.png" alt="simple-home-automation" /></p>
+        <p><img src="/assets/images/blog/introduction-to-git/introduction-to-git.png" alt="Introduction to Git" /></p>
 
 <h1 id="introduction">Introduction</h1>
 
-<p>I first installed Windows, when I was in 7th standard. It was Windows XP. That time, I really loved to use different operating systems. But, during those days I didn’t know how to use multiple operating systems as virtual machines until I reached by the 11th standard. That time, I was using Windows 7 ultimate and I wanted to use Windows Vista for knowing the experience and Windows XP for feeling the nostalgia. I started surfing the internet for solutions. One of the solutions was to use VirtualBox. I installed VirtualBox and installed both the operating systems and started using both of them. It was going well at first. But after a few days, I started noticing lags and graphics issues. I went along till my BCA first year. When I got my first Laptop (Lenovo Y50-70), I started searching for alternatives for VirtualBox and came across VMWare. VMWare fixed many of the issues, but it was a trail pack and had to pay money to use it. So, I switched back to VirtualBox. It went on till my MCA. During my first year of MCA, I uninstalled Windows 10 completely and installed Fedora. I installed VirtualBox for Virtualization. I was then suggested by my senior, <a href="https://karuvally.github.io/">Ashwin Babu Karuvally</a> that KVM is better than VirtualBox. I started surfing the internet for KVM and I solved many issues that I faced while using VirtualBox.</p>
+<p>Git is a distributed version control for tracking changes and to maintain multiple versions of code during the development of a software project. To understand Git, we should understand version control.</p>
 
-<h1 id="what-is-kvm">What is KVM?</h1>
+<h1 id="version-control">Version Control</h1>
 
-<p>Kernel-based Virtual Machine is an open source virtualization technology built into Linux. KVM is an alternative for using VirtualBox or VMWare. KVM helps to convert the Linux host system (Your machine) into a hypervisor that can run multiple operating systems as individual and independent virtual environments. These virtual environments are called guest machines or virtual machines. To understand how KVM works, we need to know what KVM is and how it works?</p>
-
-<h1 id="what-is-hypervisor">What is Hypervisor?</h1>
-
-<p>The hypervisor can be a software or hardware that can run virtual machines. The hypervisor provides a virtual operating environment for running the operating systems. Using hypervisor, a user can run any operating system on the host system. There are mainly 2 types of hypervisors:-</p>
+<p>A version control a.k.a source control a.k.a revision control is an application that helps to maintain versions of a code. Before we continue any further, we must know some important terms that will be used while we study version control:-</p>
 <ol>
-  <li>Type-1: Bare-metal hypervisors</li>
-  <li>Type-2: Hosted hypervisors</li>
+  <li>Repository: A repository is a place to store the code and other files created and modified during the development of the application. A repository also maintains the history of the code and other files generated during the development of the program.</li>
+  <li>Truck: Truck is the master branch of the git repository. That is, it is the main development line of the repository. All the branches merged will at last merge with this line to form the main line.</li>
+  <li>Tags: Tag is a descriptive name given to a specific version of the project. It forms as an memorable alternative to the id generated by version control.</li>
+  <li>Branch: A branch generates multiple development lines for the repository. This feature helps when there are multiple people working on the same project.</li>
+  <li>pull: Pulling is the process of downloading recent changes from the central repository to the computer’s local repository. If the repository is being downloaded for the first time, it is called cloning.</li>
+  <li>Pushing: Pushing is the process of uploading all the changes into the central server.</li>
+  <li>Committing: Committing is the process through which the version control records and stores changes to the central repository. The committing process also helps to document the changes done by the developer.</li>
 </ol>
 
-<p><img src="/assets/images/blog/kernel-based-virtual-machine/type-hypervisor.png" alt="Types-of-hypervisor" /></p>
-
-<p>A type-1: Bare-metal hypervisor is a type of hypervisor communicates directly with the host’s hardware. That is, the guest machine’s hardware directly communicates with the host’s machine. This type of hypervisors are fast and have least delay time. When the user triggers a command in guest operating system, it sends the command to the hypervisor and the hypervisor sends the command to the host’s hardware. Kernel-based Virtual Machine (KVM), Red Hat Enterprise Virtualization (RHEV), XenServer, Microsoft Windows Server 2012 Hyper-V and VMware vSphere are examples of this type of hypervisors.</p>
-
-<p>A type-2: Hosted hypervisor is a type of hypervisor communicates using the host operating system. A hosted hypervisor creates each running instance of the guest machine as a process in the host operating system. So for every request from the guest operating system goes to the host operating system and from there to the hardware. This communication takes time to execute each request. These kinds of hypervisors are not efficient in terms of performance. This type of hypervisor is also called hosted hypervisors. Oracle VirtualBox, VMWare Workstation and Windows Virtual PC are examples of this type of hypervisor.</p>
-
-<h1 id="why-kvm">Why KVM</h1>
+<p>That is, each change in the program’s code can be recorded during the development of the application. The major advantages of version control are:-</p>
 <ol>
-  <li>Free and open source software.</li>
-  <li>Secure as it uses sVirt (Secure virtualization) and SELinux for securing and isolating every guest operating system.</li>
-  <li>Wide hardware support</li>
-  <li>Efficient memory management</li>
-  <li>Scalable</li>
+  <li>If the developer’s recent change has crashed, he/she can revert back to his previous versions.</li>
+  <li>A developer can compare different versions of his code for bug fixing, release documentation and many more purposes.</li>
+  <li>Version control helps in efficient usage team members during development of group projects as multiple developers can contribute to the project. Each developer can track changes done by each developer to the project.</li>
+  <li>Version control supports branching, a method to create multiple workflow that doesn’t affect the master branch. The developer can also merge these multiple branches to the master line.</li>
+  <li>Acts as a backup for the code.</li>
 </ol>
 
-<h1 id="requirements-before-installing-kvm">Requirements before installing KVM</h1>
+<p>A version control works on the principle of graph data structure. That is, each change recorded during commit forms a node in the graph data structure.</p>
 
-<p>Make sure to enable Intel Virtualization Technology (INTEL VT) or AMD-V Technology for Client Virtualization. This setting can be enabled through the system’s BIOS settings.</p>
+<p><img src="/assets/images/blog/introduction-to-git/git-graph-flow.png" alt="Version control flow" /></p>
 
-<h1 id="installing-kvm">Installing KVM</h1>
-<h2 id="ubuntu-1804">Ubuntu 18.04</h2>
+<p>The above image is self explanatory on how version’s branching and merging works using graph data structure.</p>
+
+<h1 id="types-of-version-control">Types of Version Control</h1>
+
+<p>The types of version control are:-</p>
 <ol>
-  <li>Lets install KVM and virtual machine manager.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
-</code></pre></div>    </div>
-  </li>
-  <li>Next we need to find the name of the network interfaces. It will be like enp8s0 or something like that.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ip a
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we have to edit the network interface’s configuration file to create a network bridge. This bridge will provide internet to all the virtual machines (VM). The file will be empty.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/network/interfaces
-</code></pre></div>    </div>
-  </li>
-  <li>Add the following line.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto lo br0
-iface lo inet loopback
-iface enp8s0 inet manual
-iface br0 inet dhcp
-  bridge_ports enp8s0
-</code></pre></div>    </div>
-  </li>
-  <li>Now we will add the user to appropriate group, so that he can open any KVM without need for root access.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo adduser username libvirt
-$ sudo adduser username libvirt-qemu
-</code></pre></div>    </div>
-  </li>
-  <li>Reboot your system.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo reboot
-</code></pre></div>    </div>
-  </li>
+  <li>Local version control</li>
+  <li>Centralized version control</li>
+  <li>Distributed version control</li>
 </ol>
 
-<h2 id="fedora-29">Fedora 29</h2>
+<p>A local version control maintains versions of the code on the local computer. One of the most common methods of maintaining versions is local version control. The versions are maintained as different files. Due to this methodology, there is a great chance for accidental loss of data due to accidental changes to the wrong file.</p>
 
+<p>A centralized version control is a version control approach through which different versions of the code are maintained on a centralized server. A centralized version control can store versions of code and has a list of user’s who has the privilege to access the repository (Central code). An example of centralized version control is Tortoise SVN.</p>
+
+<p>A distributed version control is a type of version control system that helps to clone the repository in which the code is present along with it’s full history. The main advantage of this method is that, if any of the central servers fails, the developer can restore the repository by uploading (pushing) the code to the server. That is, a distributed version control creates a complete backup of the repository into the local computer. An example of distributed version control is git.</p>
+
+<p>The popular version systems are:-</p>
 <ol>
-  <li>Install KVM
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo dnf install @virtualization
-</code></pre></div>    </div>
-  </li>
-  <li>Let’s start the service.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl start libvirtd
-$ sudo systemctl enable libvirtd
-</code></pre></div>    </div>
-  </li>
+  <li>Git</li>
+  <li>SVN (Apache Subversion)</li>
+  <li>Mercurial</li>
 </ol>
 
-<p>Here, no need to setup network bridge because during installation, the installer will automatically do that.</p>
+<h1 id="what-is-git">What is Git?</h1>
 
-<h1 id="other-methods-to-use-kvm">Other Methods to use KVM</h1>
-<p>If you want to use KVM on your home server. That is, if you have a server that is used for virtualization only. You can use Proxmox server. Proxmox was first suggested by my senior, <a href="https://www.tharunpkarun.com/">Tharun P Karun</a>. I used proxmox server for my virtualization server. Learn more about proxmox server from <a href="https://www.proxmox.com/en/">this link</a>.</p>
+<p>Git is distributed version control application that comes under General Public License 2 (GPL 2). Git was developed by Linus Torvalds during the development of Linux kernel in 2005. As git comes under distributed version control, the local repository of projects developed using git will have complete history of changes irrespective of internet access or access to the server. Git is developed using C, Python, TCL,Perl and Shell.</p>
+
+<h1 id="installing-git">Installing Git</h1>
+
+<h2 id="ubuntu--debian">Ubuntu / Debian</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>git-all
+</code></pre></div></div>
+
+<h2 id="fedora">Fedora</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>dnf <span class="nb">install </span>git-all
+</code></pre></div></div>
+
+<h2 id="centos--rhel">Centos / RHEL</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>yum <span class="nb">install </span>git-all
+</code></pre></div></div>
+
+<h2 id="mac">Mac</h2>
+<p>You can install git using brew package manager as follows.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>git
+</code></pre></div></div>
+<p>Or, you can install as follows:-</p>
+<ol>
+  <li>Download git for mac from <a href="http://git-scm.com/download/mac">this link</a>.</li>
+  <li>Execute the installer and follow the steps to install git into mac.</li>
+</ol>
+
+<p>But, I would prefer to use brew because you can update the application easily by just executing <code class="highlighter-rouge">brew update</code>.</p>
+
+<h2 id="windows">Windows</h2>
+
+<ol>
+  <li>Download git for windows using <a href="https://git-scm.com/download/win">this link</a>.</li>
+  <li>Execute the installer and follow the steps to install git into windows.</li>
+</ol>
 
         
       </section>
@@ -483,18 +486,18 @@ $ sudo systemctl enable libvirtd
     
       
       
-      <a href="/categories/#kvm" class="page__taxonomy-item" rel="tag">KVM</a><span class="sep">, </span>
+      <a href="/categories/#devops" class="page__taxonomy-item" rel="tag">DevOps</a><span class="sep">, </span>
     
       
       
-      <a href="/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+      <a href="/categories/#git" class="page__taxonomy-item" rel="tag">Git</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-08">January 08, 2018</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-01-29">January 29, 2019</time></p>
         
       </footer>
 
@@ -503,25 +506,24 @@ $ sudo systemctl enable libvirtd
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Kernel-based+Virtual+Machine+%28KVM%29%20https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fkvm%2Fintsall-kvm-on-linux%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Introduction+to+GIT%20https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fintroduction-to-git%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fkvm%2Fintsall-kvm-on-linux%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fintroduction-to-git%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fkvm%2Fintsall-kvm-on-linux%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fintroduction-to-git%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fkvm%2Fintsall-kvm-on-linux%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fintroduction-to-git%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/raspberry%20pi/home%20automation/simple-home-automation/" class="pagination--pager" title="Simple Home Automation using Pi Zero W, Particle.io, Google assistant and IFTTT
+      <a href="/linux/kvm/intsall-kvm-on-linux/" class="pagination--pager" title="Kernel-based Virtual Machine (KVM)
 ">Previous</a>
     
     
-      <a href="/devops/git/introduction-to-git/" class="pagination--pager" title="Introduction to GIT
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -546,14 +548,14 @@ $ sudo systemctl enable libvirtd
       <div class="archive__item-teaser">
         <img src=
           
-            "/assets/images/blog/things-to-do-after-installing-fedora-28.jpeg"
+            "/assets/images/blog/kernel-based-virtual-machine/kernel-based-virtual-machine.png"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/devops/git/introduction-to-git/" rel="permalink">Introduction to GIT
+        <a href="/linux/kvm/intsall-kvm-on-linux/" rel="permalink">Kernel-based Virtual Machine (KVM)
 </a>
       
     </h2>
@@ -759,8 +761,8 @@ $ sudo systemctl enable libvirtd
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://www.sashwat.in/linux/kvm/intsall-kvm-on-linux/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/linux/kvm/intsall-kvm-on-linux"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://www.sashwat.in/devops/git/introduction-to-git/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/devops/git/introduction-to-git"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
