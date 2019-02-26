@@ -18,26 +18,26 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Sashwat's Blog">
 <meta property="og:title" content="Working with Git">
-<meta property="og:url" content="https://www.sashwat.in/devops/git/working-with-git/">
+<meta property="og:url" content="http://localhost:4000/devops/git/working-with-git/">
 
 
   <meta property="og:description" content="">
 
 
 
-  <meta property="og:image" content="https://www.sashwat.in/assets/images/blog/working-with-git/working-with-git.jpeg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/blog/working-with-git/working-with-git.jpeg">
 
 
 
   <meta name="twitter:site" content="@blackisashu">
   <meta name="twitter:title" content="Working with Git">
   <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="https://www.sashwat.in/devops/git/working-with-git/">
+  <meta name="twitter:url" content="http://localhost:4000/devops/git/working-with-git/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://www.sashwat.in/assets/images/blog/working-with-git/working-with-git.jpeg">
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/blog/working-with-git/working-with-git.jpeg">
     
   
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://www.sashwat.in/devops/git/working-with-git/">
+<link rel="canonical" href="http://localhost:4000/devops/git/working-with-git/">
 
 
 
@@ -71,7 +71,7 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Sashwat K",
-      "url": "https://www.sashwat.in",
+      "url": "http://localhost:4000",
       "sameAs": null
     }
   </script>
@@ -174,7 +174,7 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://www.sashwat.in/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
@@ -364,7 +364,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
           
         </header>
@@ -373,6 +373,31 @@
       <section class="page__content" itemprop="text">
         
         <p><img src="/assets/images/blog/working-with-git/working-with-git.jpeg" alt="Working with Git" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>As we have learned what git and version control is, from my <a href="https://www.sashwat.in/devops/git/introduction-to-git/">previous blog</a>. Now, we will learn git commands, a developer will use at his early stages. To know the version of the git installed inside the computer, goto terminal and type:-</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git <span class="nt">--version</span>
+</code></pre></div></div>
+<p><img src="/assets/images/blog/working-with-git/git-version.png" alt="git --version" /></p>
+
+<p>Now, for using git, you need a service that uses git as version control. The service will act as your central / remote / online repository for your git repositories. You can use any service like github, gitlab, bitbucket and many more. I am using github for my projects. Goto any service and create an account in them. Goto the service and create a repository for learning git.</p>
+
+<p>Now, we will configure the git installed in the computer</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir </span>test-repo <span class="c"># to create a test repo folder</span>
+<span class="nv">$ </span><span class="nb">cd </span>test-repo <span class="c"># got inside the folder</span>
+<span class="nv">$ </span>git init <span class="c"># to initialise the folder as a git repository</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/blog/working-with-git/git-init.png" alt="git init" /></p>
+
+<p>We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global user.name "yourname" # to set your name
+$ git config --global user.email "youremail" # to set your email
+</code></pre></div></div>
+<p><img src="/assets/images/blog/working-with-git/git-config.png" alt="git init" /></p>
 
         
       </section>
@@ -415,13 +440,13 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Working+with+Git%20https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Working+with+Git%20http%3A%2F%2Flocalhost%3A4000%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.sashwat.in%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdevops%2Fgit%2Fworking-with-git%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -670,7 +695,7 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://www.sashwat.in/devops/git/working-with-git/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/devops/git/working-with-git/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/devops/git/working-with-git"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
