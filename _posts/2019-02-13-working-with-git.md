@@ -31,10 +31,32 @@ $ git init # to initialise the folder as a git repository
 
 ![git init](/assets/images/blog/working-with-git/git-init.png)
 
+After creating a local repo, we will to link the repository to a service that git like github, gitlab etc. 
+
 We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.
 
-```
+```bash
 $ git config --global user.name "yourname" # to set your name
 $ git config --global user.email "youremail" # to set your email
 ```
 ![git init](/assets/images/blog/working-with-git/git-config.png)
+
+If you want to enable colour highlighting for your git console, just run the following commands.
+
+```bash
+$ git config --global color.ui true
+$ git config --global color.status auto
+$ git config --global color.branch auto
+```
+![git init](/assets/images/blog/working-with-git/git-ui-color.png)
+
+When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.
+
+```bash
+$ git config --global core.editor editor-name
+```
+
+![git init](/assets/images/blog/working-with-git/git-core-editor.png)
+
+Here, if you see, I have given all config commands an tag `--global`, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using `--global` tag.
+
