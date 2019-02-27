@@ -84,7 +84,11 @@ $ cat id_rsa.pub
 
 The generated ID will be displayed on the console. To validate if it is correct or not, it will start from `ssh-rsa`. Copy the key and goto github settings (if using github) and goto 'SSH and GPG Keys' and click 'new SSH Key' and give a title (Your PC hostname) and paste the copied key to the next field and save. Now, we can clone using SSH.
 
+```bash
+$ ssh clone ssh-url
+```
 
+![cloning repo using SSH](/assets/images/blog/working-with-git/git-clone-using-ssh.png)
 
 We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.
 

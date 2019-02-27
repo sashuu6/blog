@@ -442,6 +442,11 @@ We will create a repository in Gitlab.</p>
 
 <p>The generated ID will be displayed on the console. To validate if it is correct or not, it will start from <code class="highlighter-rouge">ssh-rsa</code>. Copy the key and goto github settings (if using github) and goto ‘SSH and GPG Keys’ and click ‘new SSH Key’ and give a title (Your PC hostname) and paste the copied key to the next field and save. Now, we can clone using SSH.</p>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh clone ssh-url
+</code></pre></div></div>
+
+<p><img src="/assets/images/blog/working-with-git/git-clone-using-ssh.png" alt="cloning repo using SSH" /></p>
+
 <p>We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"yourname"</span> <span class="c"># to set your name</span>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-27T06:55:39+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working with Git&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-27T07:00:09+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working with Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
 
@@ -67,6 +67,11 @@ We will create a repository in Gitlab.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The generated ID will be displayed on the console. To validate if it is correct or not, it will start from &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-rsa&lt;/code&gt;. Copy the key and goto github settings (if using github) and goto ‘SSH and GPG Keys’ and click ‘new SSH Key’ and give a title (Your PC hostname) and paste the copied key to the next field and save. Now, we can clone using SSH.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh clone ssh-url
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-using-ssh.png&quot; alt=&quot;cloning repo using SSH&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.&lt;/p&gt;
 
