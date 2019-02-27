@@ -364,7 +364,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
           
         </header>
@@ -428,6 +428,19 @@ We will create a repository in Gitlab.</p>
 </code></pre></div></div>
 
 <p><img src="/assets/images/blog/working-with-git/git-clone-using-url.png" alt="cloning repo using URL" /></p>
+
+<p>If you clone using URL, everytime you try to push code into the github / gitlab (or any remote repository), the console will ask for username and password. If you dont want that, you can use ssh.</p>
+
+<p>For using SSH, you need to do setup you system. You need to generate keys for communication. You can do that using the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+</code></pre></div></div>
+<p>After executing the above command, you will be prompted just press enter. You might be asked for password, if you are using a public computer, then you should keep it or else no need. You need to copy the key generated to github or gitlab. Enter the following command to view the key.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>id_rsa.pub
+</code></pre></div></div>
+
+<p>The generated ID will be displayed on the console. To validate if it is correct or not, it will start from <code class="highlighter-rouge">ssh-rsa</code>. Copy the key and goto github settings (if using github) and goto ‘SSH and GPG Keys’ and click ‘new SSH Key’ and give a title (Your PC hostname) and paste the copied key to the next field and save. Now, we can clone using SSH.</p>
 
 <p>We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.</p>
 

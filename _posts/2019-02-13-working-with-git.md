@@ -69,6 +69,23 @@ $ git clone repo-url
 
 ![cloning repo using URL](/assets/images/blog/working-with-git/git-clone-using-url.png)
 
+If you clone using URL, everytime you try to push code into the github / gitlab (or any remote repository), the console will ask for username and password. If you dont want that, you can use ssh.
+
+For using SSH, you need to do setup you system. You need to generate keys for communication. You can do that using the following command.
+
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+After executing the above command, you will be prompted just press enter. You might be asked for password, if you are using a public computer, then you should keep it or else no need. You need to copy the key generated to github or gitlab. Enter the following command to view the key.
+
+```bash
+$ cat id_rsa.pub
+```
+
+The generated ID will be displayed on the console. To validate if it is correct or not, it will start from `ssh-rsa`. Copy the key and goto github settings (if using github) and goto 'SSH and GPG Keys' and click 'new SSH Key' and give a title (Your PC hostname) and paste the copied key to the next field and save. Now, we can clone using SSH.
+
+
+
 We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.
 
 ```bash
