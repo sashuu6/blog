@@ -9,7 +9,7 @@ header:
   teaser: /assets/images/blog/working-with-git/working-with-git.jpeg
 ---
 
-![Working with Git](/assets/images/blog/working-with-git/working-with-git.jpeg)
+![Working-with-Git](/assets/images/blog/working-with-git/working-with-git.jpeg)
 
 # Git
 
@@ -31,7 +31,7 @@ $ cd test-repo # got inside the folder
 $ git init # to initialise the folder as a git repository
 ```
 
-![git init](/assets/images/blog/working-with-git/git-init.png)
+![git-init](/assets/images/blog/working-with-git/git-init.png)
 
 After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.
 We will create a repository in Gitlab.
@@ -43,7 +43,7 @@ Now, link the local repository created to the remote repository created o gitlab
 ```bash
 $ git remote add name url
 ```
-![adding repo](/assets/images/blog/working-with-git/git-add-repo.png)
+![adding-repo](/assets/images/blog/working-with-git/git-add-repo.png)
 
 If you see the above image the command executed is `git remote add origin https://gitlab.com/Sashuu6/test-repo.git`, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository's source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.
 
@@ -51,7 +51,7 @@ If you see the above image the command executed is `git remote add origin https:
 $ git push --set-upstream origin branch-name
 ```
 
-![adding repo](/assets/images/blog/working-with-git/git-upstream.png)
+![adding-upstream](/assets/images/blog/working-with-git/git-upstream.png)
 
 Now, if you dont want to do all these steps. That is, creating local repository using `git init`, add remote link using `git remote add <name> <url>` and setup upstream using `git push --set-upstream origin master`. You can just create the repository on github or gitlab and just clone the repository.
 
@@ -59,7 +59,7 @@ You can clone a git repository using:-
 1. URL
 2. SSH
 
-![adding repo](/assets/images/blog/working-with-git/git-clone-techniques.png)
+![adding-clone-techniques](/assets/images/blog/working-with-git/git-clone-techniques.png)
 
 If you want to clone a git repository using URL, you can do that using the following.
 
@@ -67,7 +67,7 @@ If you want to clone a git repository using URL, you can do that using the follo
 $ git clone repo-url
 ```
 
-![cloning repo using URL](/assets/images/blog/working-with-git/git-clone-using-url.png)
+![cloning-repo-using-URL](/assets/images/blog/working-with-git/git-clone-using-url.png)
 
 If you clone using URL, everytime you try to push code into the github / gitlab (or any remote repository), the console will ask for username and password. If you dont want that, you can use ssh.
 
@@ -88,7 +88,7 @@ The generated ID will be displayed on the console. To validate if it is correct 
 $ ssh clone ssh-url
 ```
 
-![cloning repo using SSH](/assets/images/blog/working-with-git/git-clone-using-ssh.png)
+![cloning-repo-using-SSH](/assets/images/blog/working-with-git/git-clone-using-ssh.png)
 
 We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.
 
@@ -96,7 +96,7 @@ We have successfully created a git repository. We will now configure the git eng
 $ git config --global user.name "yourname" # to set your name
 $ git config --global user.email "youremail" # to set your email
 ```
-![git init](/assets/images/blog/working-with-git/git-config.png)
+![git-config](/assets/images/blog/working-with-git/git-config.png)
 
 If you want to enable colour highlighting for your git console, just run the following commands.
 
@@ -105,7 +105,7 @@ $ git config --global color.ui true
 $ git config --global color.status auto
 $ git config --global color.branch auto
 ```
-![git init](/assets/images/blog/working-with-git/git-ui-color.png)
+![git-ui-color](/assets/images/blog/working-with-git/git-ui-color.png)
 
 When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.
 
@@ -113,7 +113,7 @@ When, we have to write huge commit message, we need a text editor linked to it. 
 $ git config --global core.editor editor-name
 ```
 
-![git init](/assets/images/blog/working-with-git/git-core-editor.png)
+![git-editor](/assets/images/blog/working-with-git/git-core-editor.png)
 
 Here, if you see, I have given all config commands an tag `--global`, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using `--global` tag.
 
@@ -123,3 +123,25 @@ Now, we have added new configurations to the git repository. To view the configu
 $ git config --list
 ```
 
+Now, we have setup the git repository. Now, we will learn to make commits and push code to remote (Github or Gitlab or any other) repository. Now we have added code to the repository and now we want to make a commit. First, we need to prepare the files that needs to be committed. We call it staging process. You can do that using the following command.
+
+```bash
+$ git add file-name
+```
+
+The other attributes for `git add` are `*` and `.`. I use `*` because, it will select all the changes made in current directory and it's sub folders. If you use `.`, it will select only the files present on the current directory. It will not select the sub folders. 
+
+Now, we will commit the staged files. Use the following command to commit changes.
+
+```bash
+$ git commit -m "message"
+```
+Replace message with your message. If you have to write a huge message, just type `git commit', your prefered editor will pop up and type the message. 
+
+As we have commited the code, we need to push it to the remote repository. You can do that using the following code.
+
+```bash
+$ git push
+```
+
+![git-add-commit-push](/assets/images/blog/working-with-git/git-add-commit-push.png)

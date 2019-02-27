@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-27T07:00:09+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working with Git&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-27T07:19:37+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
 
@@ -18,7 +18,7 @@
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init &lt;span class=&quot;c&quot;&gt;# to initialise the folder as a git repository&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-init.png&quot; alt=&quot;git init&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-init.png&quot; alt=&quot;git-init&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.
 We will create a repository in Gitlab.&lt;/p&gt;
@@ -29,14 +29,14 @@ We will create a repository in Gitlab.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add name url
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-add-repo.png&quot; alt=&quot;adding repo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-add-repo.png&quot; alt=&quot;adding-repo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you see the above image the command executed is &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add origin https://gitlab.com/Sashuu6/test-repo.git&lt;/code&gt;, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository’s source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push &lt;span class=&quot;nt&quot;&gt;--set-upstream&lt;/span&gt; origin branch-name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-upstream.png&quot; alt=&quot;adding repo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-upstream.png&quot; alt=&quot;adding-upstream&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, if you dont want to do all these steps. That is, creating local repository using &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;, add remote link using &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt; and setup upstream using &lt;code class=&quot;highlighter-rouge&quot;&gt;git push --set-upstream origin master&lt;/code&gt;. You can just create the repository on github or gitlab and just clone the repository.&lt;/p&gt;
 
@@ -46,14 +46,14 @@ We will create a repository in Gitlab.&lt;/p&gt;
   &lt;li&gt;SSH&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-techniques.png&quot; alt=&quot;adding repo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-techniques.png&quot; alt=&quot;adding-clone-techniques&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to clone a git repository using URL, you can do that using the following.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone repo-url
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-using-url.png&quot; alt=&quot;cloning repo using URL&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-using-url.png&quot; alt=&quot;cloning-repo-using-URL&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you clone using URL, everytime you try to push code into the github / gitlab (or any remote repository), the console will ask for username and password. If you dont want that, you can use ssh.&lt;/p&gt;
 
@@ -71,14 +71,14 @@ We will create a repository in Gitlab.&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh clone ssh-url
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-using-ssh.png&quot; alt=&quot;cloning repo using SSH&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-using-ssh.png&quot; alt=&quot;cloning-repo-using-SSH&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;yourname&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# to set your name&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;youremail&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# to set your email&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-config.png&quot; alt=&quot;git init&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-config.png&quot; alt=&quot;git-config&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to enable colour highlighting for your git console, just run the following commands.&lt;/p&gt;
 
@@ -86,21 +86,41 @@ We will create a repository in Gitlab.&lt;/p&gt;
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; color.status auto
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; color.branch auto
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-ui-color.png&quot; alt=&quot;git init&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-ui-color.png&quot; alt=&quot;git-ui-color&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.editor editor-name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-core-editor.png&quot; alt=&quot;git init&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-core-editor.png&quot; alt=&quot;git-editor&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here, if you see, I have given all config commands an tag &lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt;, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using &lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt; tag.&lt;/p&gt;
 
 &lt;p&gt;Now, we have added new configurations to the git repository. To view the configuration, use the following command.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Introduction to Git</title><link href="http://localhost:4000/devops/git/introduction-to-git/" rel="alternate" type="text/html" title="Introduction to Git" /><published>2019-01-29T00:00:00+05:30</published><updated>2019-01-29T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/introduction-to-git</id><content type="html" xml:base="http://localhost:4000/devops/git/introduction-to-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/introduction-to-git/introduction-to-git.png&quot; alt=&quot;Introduction to Git&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, we have setup the git repository. Now, we will learn to make commits and push code to remote (Github or Gitlab or any other) repository. Now we have added code to the repository and now we want to make a commit. First, we need to prepare the files that needs to be committed. We call it staging process. You can do that using the following command.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add file-name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The other attributes for &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; are &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;. I use &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; because, it will select all the changes made in current directory and it’s sub folders. If you use &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;, it will select only the files present on the current directory. It will not select the sub folders.&lt;/p&gt;
+
+&lt;p&gt;Now, we will commit the staged files. Use the following command to commit changes.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Replace message with your message. If you have to write a huge message, just type `git commit’, your prefered editor will pop up and type the message.&lt;/p&gt;
+
+&lt;p&gt;As we have commited the code, we need to push it to the remote repository. You can do that using the following code.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-add-commit-push.png&quot; alt=&quot;git-add-commit-push&quot; /&gt;&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Introduction to Git</title><link href="http://localhost:4000/devops/git/introduction-to-git/" rel="alternate" type="text/html" title="Introduction to Git" /><published>2019-01-29T00:00:00+05:30</published><updated>2019-01-29T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/introduction-to-git</id><content type="html" xml:base="http://localhost:4000/devops/git/introduction-to-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/introduction-to-git/introduction-to-git.png&quot; alt=&quot;Introduction to Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 

@@ -364,7 +364,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
           
         </header>
@@ -372,7 +372,7 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><img src="/assets/images/blog/working-with-git/working-with-git.jpeg" alt="Working with Git" /></p>
+        <p><img src="/assets/images/blog/working-with-git/working-with-git.jpeg" alt="Working-with-Git" /></p>
 
 <h1 id="git">Git</h1>
 
@@ -392,7 +392,7 @@
 <span class="nv">$ </span>git init <span class="c"># to initialise the folder as a git repository</span>
 </code></pre></div></div>
 
-<p><img src="/assets/images/blog/working-with-git/git-init.png" alt="git init" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-init.png" alt="git-init" /></p>
 
 <p>After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.
 We will create a repository in Gitlab.</p>
@@ -403,14 +403,14 @@ We will create a repository in Gitlab.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add name url
 </code></pre></div></div>
-<p><img src="/assets/images/blog/working-with-git/git-add-repo.png" alt="adding repo" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-add-repo.png" alt="adding-repo" /></p>
 
 <p>If you see the above image the command executed is <code class="highlighter-rouge">git remote add origin https://gitlab.com/Sashuu6/test-repo.git</code>, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository’s source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push <span class="nt">--set-upstream</span> origin branch-name
 </code></pre></div></div>
 
-<p><img src="/assets/images/blog/working-with-git/git-upstream.png" alt="adding repo" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-upstream.png" alt="adding-upstream" /></p>
 
 <p>Now, if you dont want to do all these steps. That is, creating local repository using <code class="highlighter-rouge">git init</code>, add remote link using <code class="highlighter-rouge">git remote add &lt;name&gt; &lt;url&gt;</code> and setup upstream using <code class="highlighter-rouge">git push --set-upstream origin master</code>. You can just create the repository on github or gitlab and just clone the repository.</p>
 
@@ -420,14 +420,14 @@ We will create a repository in Gitlab.</p>
   <li>SSH</li>
 </ol>
 
-<p><img src="/assets/images/blog/working-with-git/git-clone-techniques.png" alt="adding repo" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-clone-techniques.png" alt="adding-clone-techniques" /></p>
 
 <p>If you want to clone a git repository using URL, you can do that using the following.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone repo-url
 </code></pre></div></div>
 
-<p><img src="/assets/images/blog/working-with-git/git-clone-using-url.png" alt="cloning repo using URL" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-clone-using-url.png" alt="cloning-repo-using-URL" /></p>
 
 <p>If you clone using URL, everytime you try to push code into the github / gitlab (or any remote repository), the console will ask for username and password. If you dont want that, you can use ssh.</p>
 
@@ -445,14 +445,14 @@ We will create a repository in Gitlab.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh clone ssh-url
 </code></pre></div></div>
 
-<p><img src="/assets/images/blog/working-with-git/git-clone-using-ssh.png" alt="cloning repo using SSH" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-clone-using-ssh.png" alt="cloning-repo-using-SSH" /></p>
 
 <p>We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"yourname"</span> <span class="c"># to set your name</span>
 <span class="nv">$ </span>git config <span class="nt">--global</span> user.email <span class="s2">"youremail"</span> <span class="c"># to set your email</span>
 </code></pre></div></div>
-<p><img src="/assets/images/blog/working-with-git/git-config.png" alt="git init" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-config.png" alt="git-config" /></p>
 
 <p>If you want to enable colour highlighting for your git console, just run the following commands.</p>
 
@@ -460,14 +460,14 @@ We will create a repository in Gitlab.</p>
 <span class="nv">$ </span>git config <span class="nt">--global</span> color.status auto
 <span class="nv">$ </span>git config <span class="nt">--global</span> color.branch auto
 </code></pre></div></div>
-<p><img src="/assets/images/blog/working-with-git/git-ui-color.png" alt="git init" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-ui-color.png" alt="git-ui-color" /></p>
 
 <p>When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> core.editor editor-name
 </code></pre></div></div>
 
-<p><img src="/assets/images/blog/working-with-git/git-core-editor.png" alt="git init" /></p>
+<p><img src="/assets/images/blog/working-with-git/git-core-editor.png" alt="git-editor" /></p>
 
 <p>Here, if you see, I have given all config commands an tag <code class="highlighter-rouge">--global</code>, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using <code class="highlighter-rouge">--global</code> tag.</p>
 
@@ -476,6 +476,25 @@ We will create a repository in Gitlab.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--list</span>
 </code></pre></div></div>
 
+<p>Now, we have setup the git repository. Now, we will learn to make commits and push code to remote (Github or Gitlab or any other) repository. Now we have added code to the repository and now we want to make a commit. First, we need to prepare the files that needs to be committed. We call it staging process. You can do that using the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add file-name
+</code></pre></div></div>
+
+<p>The other attributes for <code class="highlighter-rouge">git add</code> are <code class="highlighter-rouge">*</code> and <code class="highlighter-rouge">.</code>. I use <code class="highlighter-rouge">*</code> because, it will select all the changes made in current directory and it’s sub folders. If you use <code class="highlighter-rouge">.</code>, it will select only the files present on the current directory. It will not select the sub folders.</p>
+
+<p>Now, we will commit the staged files. Use the following command to commit changes.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"message"</span>
+</code></pre></div></div>
+<p>Replace message with your message. If you have to write a huge message, just type `git commit’, your prefered editor will pop up and type the message.</p>
+
+<p>As we have commited the code, we need to push it to the remote repository. You can do that using the following code.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push
+</code></pre></div></div>
+
+<p><img src="/assets/images/blog/working-with-git/git-add-commit-push.png" alt="git-add-commit-push" /></p>
 
         
       </section>
