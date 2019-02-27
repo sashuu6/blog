@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-26T19:19:23+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working with Git&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-27T06:36:19+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working with Git&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
 
 &lt;p&gt;As we have learned what git and version control is, from my &lt;a href=&quot;https://www.sashwat.in/devops/git/introduction-to-git/&quot;&gt;previous blog&lt;/a&gt;. Now, we will learn git commands, a developer will use at his early stages. To know the version of the git installed inside the computer, goto terminal and type:-&lt;/p&gt;
+
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-version.png&quot; alt=&quot;git --version&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, for using git, you need a service that uses git as version control. The service will act as your central / remote / online repository for your git repositories. You can use any service like github, gitlab, bitbucket and many more. I am using github for my projects. Goto any service and create an account in them. Goto the service and create a repository for learning git.&lt;/p&gt;
@@ -18,7 +20,40 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-init.png&quot; alt=&quot;git init&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.&lt;/p&gt;
+&lt;p&gt;After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.
+We will create a repository in Gitlab.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/gitlab-example.png&quot; alt=&quot;gitlab&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, link the local repository created to the remote repository created o gitlab or any other server. You can do that by running the following command.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add name url
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-add-repo.png&quot; alt=&quot;adding repo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you see the above image the command executed is &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add origin https://gitlab.com/Sashuu6/test-repo.git&lt;/code&gt;, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository’s source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push &lt;span class=&quot;nt&quot;&gt;--set-upstream&lt;/span&gt; origin branch-name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-upstream.png&quot; alt=&quot;adding repo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, if you dont want to do all these steps. That is, creating local repository using &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;, add remote link using &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt; and setup upstream using &lt;code class=&quot;highlighter-rouge&quot;&gt;git push --set-upstream origin master&lt;/code&gt;. You can just create the repository on github or gitlab and just clone the repository.&lt;/p&gt;
+
+&lt;p&gt;You can clone a git repository using:-&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;URL&lt;/li&gt;
+  &lt;li&gt;SSH&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-techniques.png&quot; alt=&quot;adding repo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to clone a git repository using URL, you can do that using the following.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone repo-url
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-clone-using-url.png&quot; alt=&quot;cloning repo using URL&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.&lt;/p&gt;
 
@@ -42,7 +77,12 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-core-editor.png&quot; alt=&quot;git init&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Here, if you see, I have given all config commands an tag &lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt;, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using &lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt; tag.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Introduction to Git</title><link href="http://localhost:4000/devops/git/introduction-to-git/" rel="alternate" type="text/html" title="Introduction to Git" /><published>2019-01-29T00:00:00+05:30</published><updated>2019-01-29T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/introduction-to-git</id><content type="html" xml:base="http://localhost:4000/devops/git/introduction-to-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/introduction-to-git/introduction-to-git.png&quot; alt=&quot;Introduction to Git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Here, if you see, I have given all config commands an tag &lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt;, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using &lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt; tag.&lt;/p&gt;
+
+&lt;p&gt;Now, we have added new configurations to the git repository. To view the configuration, use the following command.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Introduction to Git</title><link href="http://localhost:4000/devops/git/introduction-to-git/" rel="alternate" type="text/html" title="Introduction to Git" /><published>2019-01-29T00:00:00+05:30</published><updated>2019-01-29T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/introduction-to-git</id><content type="html" xml:base="http://localhost:4000/devops/git/introduction-to-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/introduction-to-git/introduction-to-git.png&quot; alt=&quot;Introduction to Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 

@@ -364,7 +364,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
           
         </header>
@@ -374,11 +374,13 @@
         
         <p><img src="/assets/images/blog/working-with-git/working-with-git.jpeg" alt="Working with Git" /></p>
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="git">Git</h1>
 
 <p>As we have learned what git and version control is, from my <a href="https://www.sashwat.in/devops/git/introduction-to-git/">previous blog</a>. Now, we will learn git commands, a developer will use at his early stages. To know the version of the git installed inside the computer, goto terminal and type:-</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git <span class="nt">--version</span>
 </code></pre></div></div>
+
 <p><img src="/assets/images/blog/working-with-git/git-version.png" alt="git --version" /></p>
 
 <p>Now, for using git, you need a service that uses git as version control. The service will act as your central / remote / online repository for your git repositories. You can use any service like github, gitlab, bitbucket and many more. I am using github for my projects. Goto any service and create an account in them. Goto the service and create a repository for learning git.</p>
@@ -392,7 +394,40 @@
 
 <p><img src="/assets/images/blog/working-with-git/git-init.png" alt="git init" /></p>
 
-<p>After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.</p>
+<p>After creating a local repo, we will to link the repository to a service that git like github, gitlab etc.
+We will create a repository in Gitlab.</p>
+
+<p><img src="/assets/images/blog/working-with-git/gitlab-example.png" alt="gitlab" /></p>
+
+<p>Now, link the local repository created to the remote repository created o gitlab or any other server. You can do that by running the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add name url
+</code></pre></div></div>
+<p><img src="/assets/images/blog/working-with-git/git-add-repo.png" alt="adding repo" /></p>
+
+<p>If you see the above image the command executed is <code class="highlighter-rouge">git remote add origin https://gitlab.com/Sashuu6/test-repo.git</code>, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository’s source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push <span class="nt">--set-upstream</span> origin branch-name
+</code></pre></div></div>
+
+<p><img src="/assets/images/blog/working-with-git/git-upstream.png" alt="adding repo" /></p>
+
+<p>Now, if you dont want to do all these steps. That is, creating local repository using <code class="highlighter-rouge">git init</code>, add remote link using <code class="highlighter-rouge">git remote add &lt;name&gt; &lt;url&gt;</code> and setup upstream using <code class="highlighter-rouge">git push --set-upstream origin master</code>. You can just create the repository on github or gitlab and just clone the repository.</p>
+
+<p>You can clone a git repository using:-</p>
+<ol>
+  <li>URL</li>
+  <li>SSH</li>
+</ol>
+
+<p><img src="/assets/images/blog/working-with-git/git-clone-techniques.png" alt="adding repo" /></p>
+
+<p>If you want to clone a git repository using URL, you can do that using the following.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone repo-url
+</code></pre></div></div>
+
+<p><img src="/assets/images/blog/working-with-git/git-clone-using-url.png" alt="cloning repo using URL" /></p>
 
 <p>We have successfully created a git repository. We will now configure the git engine installed in our system. The configuration involves telling who we are. That is, username and user email. We can do that as follows.</p>
 
@@ -417,6 +452,11 @@
 <p><img src="/assets/images/blog/working-with-git/git-core-editor.png" alt="git init" /></p>
 
 <p>Here, if you see, I have given all config commands an tag <code class="highlighter-rouge">--global</code>, using this tag applies the configuration to your system and will be automatically implemented to all the git repositories you create inside your computer. If you are using git on your college computer, then from your git repository, run these configuration commands without using <code class="highlighter-rouge">--global</code> tag.</p>
+
+<p>Now, we have added new configurations to the git repository. To view the configuration, use the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--list</span>
+</code></pre></div></div>
 
 
         
