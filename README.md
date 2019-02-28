@@ -4,13 +4,17 @@ This repository contains my blog. This blog runs on jekyll.
 # How to install
 
 1. Clone this repository
-2. Make changes to config.yml to make it personal.
-3. Add posts to in _posts.
-4. Compile the site using command.
+2. Install the dependencies.
+```bash
+$ bundle
+```
+3. Make changes to config.yml to make it personal.
+4. Add posts to in _posts.
+5. Compile the site using command.
 ```bash
 jekyll build
 ```
-5. Push code to git.
+6. Push code to git.
 
 # Add links to Navigation
 
