@@ -12,7 +12,7 @@ $ bundle
 4. Add posts to in _posts.
 5. Compile the site using command.
 ```bash
-jekyll build
+$ jekyll build
 ```
 6. Push code to git.
 
