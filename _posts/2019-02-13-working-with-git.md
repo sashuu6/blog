@@ -1,10 +1,10 @@
 ---
-title:  "Working with Git"
+title: "Working with Git"
 search: true
-categories: 
+categories:
   - DevOps
   - Git
-last_modified_at: 2019-02-29T08:05:34-05:00
+last_modified_at: 2019-02-29 08:05:34
 header:
   teaser: /assets/images/blog/working-with-git/working-with-git.jpeg
 ---
@@ -23,7 +23,7 @@ $ git --version
 
 Now, for using git, you need a service that uses git as version control. The service will act as your central / remote / online repository for your git repositories. You can use any service like github, gitlab, bitbucket and many more. I am using github for my projects. Goto any service and create an account in them. Goto the service and create a repository for learning git.
 
-Now, we will configure the git installed in the computer 
+Now, we will configure the git installed in the computer
 
 ```bash
 $ mkdir test-repo # to create a test repo folder
@@ -43,6 +43,7 @@ Now, link the local repository created to the remote repository created o gitlab
 ```bash
 $ git remote add name url
 ```
+
 ![adding-repo](/assets/images/blog/working-with-git/git-add-repo.png)
 
 If you see the above image the command executed is `git remote add origin https://gitlab.com/Sashuu6/test-repo.git`, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository's source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.
@@ -56,6 +57,7 @@ $ git push --set-upstream origin branch-name
 Now, if you dont want to do all these steps. That is, creating local repository using `git init`, add remote link using `git remote add <name> <url>` and setup upstream using `git push --set-upstream origin master`. You can just create the repository on github or gitlab and just clone the repository.
 
 You can clone a git repository using:-
+
 1. URL
 2. SSH
 
@@ -76,6 +78,7 @@ For using SSH, you need to do setup you system. You need to generate keys for co
 ```bash
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
+
 After executing the above command, you will be prompted just press enter. You might be asked for password, if you are using a public computer, then you should keep it or else no need. You need to copy the key generated to github or gitlab. Enter the following command to view the key.
 
 ```bash
@@ -96,6 +99,7 @@ We have successfully created a git repository. We will now configure the git eng
 $ git config --global user.name "yourname" # to set your name
 $ git config --global user.email "youremail" # to set your email
 ```
+
 ![git-config](/assets/images/blog/working-with-git/git-config.png)
 
 If you want to enable colour highlighting for your git console, just run the following commands.
@@ -105,6 +109,7 @@ $ git config --global color.ui true
 $ git config --global color.status auto
 $ git config --global color.branch auto
 ```
+
 ![git-ui-color](/assets/images/blog/working-with-git/git-ui-color.png)
 
 When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.
@@ -129,14 +134,15 @@ Now, we have setup the git repository. Now, we will learn to make commits and pu
 $ git add file-name
 ```
 
-The other attributes for `git add` are `*` and `.`. I use `*` because, it will select all the changes made in current directory and it's sub folders. If you use `.`, it will select only the files present on the current directory. It will not select the sub folders. 
+The other attributes for `git add` are `*` and `.`. I use `*` because, it will select all the changes made in current directory and it's sub folders. If you use `.`, it will select only the files present on the current directory. It will not select the sub folders.
 
 Now, we will commit the staged files. Use the following command to commit changes.
 
 ```bash
 $ git commit -m "message"
 ```
-Replace message with your message. If you have to write a huge message, just type `git commit', your prefered editor will pop up and type the message. 
+
+Replace message with your message. If you have to write a huge message, just type `git commit', your prefered editor will pop up and type the message.
 
 As we have commited the code, we need to push it to the remote repository. You can do that using the following code.
 

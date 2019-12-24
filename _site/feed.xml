@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-29T10:51:05+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T18:35:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-24T23:49:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">My Open Source Projects</title><link href="http://localhost:4000/projects/open%20source/my-open-projects/" rel="alternate" type="text/html" title="My Open Source Projects" /><published>2019-12-20T00:00:00+05:30</published><updated>2019-12-20T13:35:34+05:30</updated><id>http://localhost:4000/projects/open%20source/my-open-projects</id><content type="html" xml:base="http://localhost:4000/projects/open%20source/my-open-projects/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-opensource-projects.jpg&quot; alt=&quot;My Open Source Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;My desire to perform open source contributions started when I met my senior Ashwin Karuvally at my Post Graduation (MCA) at College of Engineering Trivandrum (CET). He was an open source contributor and a hardcore linux user.When I was at my first years, I was a windows user. Using windows was soley for playing games. He taught me why FOSS, Git and Linux and why open source contribution improves skills and lands a respectible job at top tier companies. I was very intersted in IOT and hardware programming. So I started making projects based on electronics. But before that, my contributions started by developing platform for CET MCA fest, DCOD. For that competition, I worked with the seniors to &lt;a href=&quot;https://github.com/sashuu6/debugger-dcod-mca-cet&quot;&gt;Debugger&lt;/a&gt; (For code decoding competion. It’s like hackerrank) and &lt;a href=&quot;https://github.com/sashuu6/reverse_engineering-dcod-mca-cet&quot;&gt;reverse engineering&lt;/a&gt; (Hack the given database and website code and answer questions).&lt;/p&gt;
+
+&lt;p&gt;After the fest, I started aquiring more knowledge on micro-controllers and hardware programming and at later stages, I started taking workshops on those topics. For sharing the study materials, I used add the contents to git repositories and share them.&lt;/p&gt;
+
+&lt;p&gt;I have used git to version control all my lab programs I used to do when I was at CET from S1 to mini and final projects S6. I have used Git and Github develop and host my CV website, CV and blog.&lt;/p&gt;
+
+&lt;p&gt;These are some of the honourable projects I will done till 2019. But, when I look back at this post for few years, I will be very disappointed at my old me.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;3 Factor Authentication lock.&lt;/li&gt;
+  &lt;li&gt;Python fingerprint recognition.&lt;/li&gt;
+  &lt;li&gt;Youtube Subscriber Count.&lt;/li&gt;
+  &lt;li&gt;Arduino Weather Station.&lt;/li&gt;
+  &lt;li&gt;Survellance Bot.&lt;/li&gt;
+  &lt;li&gt;vONE Atmega Board.&lt;/li&gt;
+  &lt;li&gt;Simple Home Automation.&lt;/li&gt;
+  &lt;li&gt;IOT water Level&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T08:05:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
 
@@ -29,6 +50,7 @@ We will create a repository in Gitlab.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add name url
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-add-repo.png&quot; alt=&quot;adding-repo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you see the above image the command executed is &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add origin https://gitlab.com/Sashuu6/test-repo.git&lt;/code&gt;, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository’s source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.&lt;/p&gt;
@@ -41,6 +63,7 @@ We will create a repository in Gitlab.&lt;/p&gt;
 &lt;p&gt;Now, if you dont want to do all these steps. That is, creating local repository using &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;, add remote link using &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt; and setup upstream using &lt;code class=&quot;highlighter-rouge&quot;&gt;git push --set-upstream origin master&lt;/code&gt;. You can just create the repository on github or gitlab and just clone the repository.&lt;/p&gt;
 
 &lt;p&gt;You can clone a git repository using:-&lt;/p&gt;
+
 &lt;ol&gt;
   &lt;li&gt;URL&lt;/li&gt;
   &lt;li&gt;SSH&lt;/li&gt;
@@ -61,6 +84,7 @@ We will create a repository in Gitlab.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;After executing the above command, you will be prompted just press enter. You might be asked for password, if you are using a public computer, then you should keep it or else no need. You need to copy the key generated to github or gitlab. Enter the following command to view the key.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;id_rsa.pub
@@ -78,6 +102,7 @@ We will create a repository in Gitlab.&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;yourname&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# to set your name&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;youremail&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# to set your email&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-config.png&quot; alt=&quot;git-config&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to enable colour highlighting for your git console, just run the following commands.&lt;/p&gt;
@@ -86,6 +111,7 @@ We will create a repository in Gitlab.&lt;/p&gt;
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; color.status auto
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; color.branch auto
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/git-ui-color.png&quot; alt=&quot;git-ui-color&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.&lt;/p&gt;
@@ -113,6 +139,7 @@ We will create a repository in Gitlab.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;Replace message with your message. If you have to write a huge message, just type `git commit’, your prefered editor will pop up and type the message.&lt;/p&gt;
 
 &lt;p&gt;As we have commited the code, we need to push it to the remote repository. You can do that using the following code.&lt;/p&gt;
@@ -1151,81 +1178,4 @@ Add the following lines below &amp;lt;VirtualHost_default_:443&amp;gt;&lt;/p&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;s&quot;&gt;$ sudo apachectl restart&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;We have not successfully established a server inside Mac.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Setup wake on LAN on local server</title><link href="http://localhost:4000/linux/networking/wake-on-lan-on-local-server/" rel="alternate" type="text/html" title="Setup wake on LAN on local server" /><published>2018-10-04T00:00:00+05:30</published><updated>2018-09-27T18:35:34+05:30</updated><id>http://localhost:4000/linux/networking/wake-on-lan-on-local-server</id><content type="html" xml:base="http://localhost:4000/linux/networking/wake-on-lan-on-local-server/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/setup-wake-on-lan.jpg&quot; alt=&quot;WoLAN&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Why Wake on LAN? Wake on LAN is program to wake a system which is under deep sleep. That is, the system is shut down with power access. A system with an enabled Wake-on-LAN feature can be turned on using a special packet. This special packet is sent by the client remotely.&lt;/p&gt;
-
-&lt;p&gt;To implement Wake-On-LAN on the server, we need to install ethtool on our server and wakeonlan commanline program on our personal system.&lt;/p&gt;
-
-&lt;p&gt;First we will setup our server:-&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Enable wake-on-LAN on BIOS settings. Enter into BIOS and search for wake on LAN and enable it.
-Make sure the ethernet cable connect from the server to the switch or router has all the 8 pins connected. This is because the magic packet is sent via a dedicatd pin, usually last 2 pins.
-Install ethtool into the server.&lt;/p&gt;
-
-    &lt;p&gt;(Ubuntu / Debian)&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ sudo apt install ethtool&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;(Fedora)&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ sudo dnf install ethtool&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;(RHEL / CentOS)&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;s&quot;&gt;$ sudo yum install ethtool&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Now let’s find the name of ethernet port present in the system. This command will also reveal the mac address.&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ ip a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;The above command will output the ethernet port name (Lets consider the ethernet name to be enp9s0).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Let’s check if ethtool detects the port.&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ sudo ethtool enp9s0&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Now, let’s activate wake on lan.&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ sudo ethtool -s enp8s0 wol g&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Now, we will setup wake on client on your system. i.e, the system that will be used to wake the server.&lt;/p&gt;
-
-    &lt;p&gt;(Ubuntu / Debian)&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ sudo apt install etherwake&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;(Mac)&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ brew install wakeonlan&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;(Fedora / RHEL / CentOS)&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ wget http://gsd.di.uminho.pt/jpo/software/wakeonlan/downloads/wakeonlan-0.41-0.fdr.1.noarch.rpm&lt;/span&gt; 
-&lt;span class=&quot;s&quot;&gt;$ rpm -Uvh wakeonlan-0.41-0.fdr.1.noarch.rpm&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now, we can wake the system using the wakeonlan command.
-Execute the following command.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;s&quot;&gt;$ wakeonlan mac-address&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The above command will wake your system.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;We have not successfully established a server inside Mac.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry></feed>

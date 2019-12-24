@@ -49,7 +49,7 @@
 
 
 
-  <meta property="article:modified_time" content="2019-03-01T18:35:34+05:30">
+  <meta property="article:modified_time" content="2019-03-01T08:05:34+05:30">
 
 
 
@@ -403,6 +403,7 @@ We will create a repository in Gitlab.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add name url
 </code></pre></div></div>
+
 <p><img src="/assets/images/blog/working-with-git/git-add-repo.png" alt="adding-repo" /></p>
 
 <p>If you see the above image the command executed is <code class="highlighter-rouge">git remote add origin https://gitlab.com/Sashuu6/test-repo.git</code>, origin attribute defines the original path of repository from where it is taken. The URL after origin is taken as the repository’s source URL. After this step, we need to set the upstream. That is, you have to set the branch to which you are going to upload the code.</p>
@@ -415,6 +416,7 @@ We will create a repository in Gitlab.</p>
 <p>Now, if you dont want to do all these steps. That is, creating local repository using <code class="highlighter-rouge">git init</code>, add remote link using <code class="highlighter-rouge">git remote add &lt;name&gt; &lt;url&gt;</code> and setup upstream using <code class="highlighter-rouge">git push --set-upstream origin master</code>. You can just create the repository on github or gitlab and just clone the repository.</p>
 
 <p>You can clone a git repository using:-</p>
+
 <ol>
   <li>URL</li>
   <li>SSH</li>
@@ -435,6 +437,7 @@ We will create a repository in Gitlab.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
 </code></pre></div></div>
+
 <p>After executing the above command, you will be prompted just press enter. You might be asked for password, if you are using a public computer, then you should keep it or else no need. You need to copy the key generated to github or gitlab. Enter the following command to view the key.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>id_rsa.pub
@@ -452,6 +455,7 @@ We will create a repository in Gitlab.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"yourname"</span> <span class="c"># to set your name</span>
 <span class="nv">$ </span>git config <span class="nt">--global</span> user.email <span class="s2">"youremail"</span> <span class="c"># to set your email</span>
 </code></pre></div></div>
+
 <p><img src="/assets/images/blog/working-with-git/git-config.png" alt="git-config" /></p>
 
 <p>If you want to enable colour highlighting for your git console, just run the following commands.</p>
@@ -460,6 +464,7 @@ We will create a repository in Gitlab.</p>
 <span class="nv">$ </span>git config <span class="nt">--global</span> color.status auto
 <span class="nv">$ </span>git config <span class="nt">--global</span> color.branch auto
 </code></pre></div></div>
+
 <p><img src="/assets/images/blog/working-with-git/git-ui-color.png" alt="git-ui-color" /></p>
 
 <p>When, we have to write huge commit message, we need a text editor linked to it. For doing that, we use the following command.</p>
@@ -487,6 +492,7 @@ We will create a repository in Gitlab.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"message"</span>
 </code></pre></div></div>
+
 <p>Replace message with your message. If you have to write a huge message, just type `git commit’, your prefered editor will pop up and type the message.</p>
 
 <p>As we have commited the code, we need to push it to the remote repository. You can do that using the following code.</p>
@@ -554,7 +560,8 @@ We will create a repository in Gitlab.</p>
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/projects/open%20source/my-open-projects/" class="pagination--pager" title="My Open Source Projects
+">Next</a>
     
   </nav>
 
@@ -568,6 +575,42 @@ We will create a repository in Gitlab.</p>
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/blog/my-opensource-projects.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/projects/open%20source/my-open-projects/" rel="permalink">My Open Source Projects
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
         
           
 
@@ -669,42 +712,6 @@ We will create a repository in Gitlab.</p>
 
 
   2 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/blog/setting-Up-localhost.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/web/PHP-installation/" rel="permalink">PHP and MySQL Installation and Why no need for Web Server
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  3 minute read
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">
