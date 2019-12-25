@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.sashwat.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.sashwat.in/" rel="alternate" type="text/html" /><updated>2019-12-25T14:39:56+05:30</updated><id>https://www.sashwat.in/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">My Open Source Projects</title><link href="https://www.sashwat.in/projects/open%20source/my-open-projects/" rel="alternate" type="text/html" title="My Open Source Projects" /><published>2019-12-20T00:00:00+05:30</published><updated>2019-12-20T13:35:34+05:30</updated><id>https://www.sashwat.in/projects/open%20source/my-open-projects</id><content type="html" xml:base="https://www.sashwat.in/projects/open%20source/my-open-projects/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-opensource-projects.jpg&quot; alt=&quot;My Open Source Projects&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.sashwat.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.sashwat.in/" rel="alternate" type="text/html" /><updated>2019-12-25T17:16:52+05:30</updated><id>https://www.sashwat.in/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">My Open Source Projects</title><link href="https://www.sashwat.in/projects/open%20source/my-open-projects/" rel="alternate" type="text/html" title="My Open Source Projects" /><published>2019-12-20T00:00:00+05:30</published><updated>2019-12-20T13:35:34+05:30</updated><id>https://www.sashwat.in/projects/open%20source/my-open-projects</id><content type="html" xml:base="https://www.sashwat.in/projects/open%20source/my-open-projects/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-opensource-projects.jpg&quot; alt=&quot;My Open Source Projects&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -109,7 +109,36 @@
 
 &lt;p&gt;Congrats, you have successfully rooted your Samsung Galaxy Note 8.&lt;/p&gt;
 
-&lt;p&gt;Disclaimer: If you brink your phone, I am not responsible. I have written another blog on how to unbrick your Samsung galaxy Note 8.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Working with Git</title><link href="https://www.sashwat.in/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T08:05:34+05:30</updated><id>https://www.sashwat.in/devops/git/working-with-git</id><content type="html" xml:base="https://www.sashwat.in/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Disclaimer: If you brink your phone, I am not responsible. I have written another blog on how to unbrick your Samsung galaxy Note 8.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Unbrick Samsung Note 8</title><link href="https://www.sashwat.in/android/rooting/samsung/note%208/exynos/unbrick-samsung-note-9/" rel="alternate" type="text/html" title="Unbrick Samsung Note 8" /><published>2019-10-05T00:00:00+05:30</published><updated>2019-12-20T13:35:34+05:30</updated><id>https://www.sashwat.in/android/rooting/samsung/note%208/exynos/unbrick-samsung-note-9</id><content type="html" xml:base="https://www.sashwat.in/android/rooting/samsung/note%208/exynos/unbrick-samsung-note-9/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/unbrick-samsung-note-8-exynos.jpg&quot; alt=&quot;Unbrick Samsung Note 8&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This blog guides you to unbrick your Samsung Galaxy Note 8. I have bricked my phone few times for finding a way to root the phone. So lets go on with it, shall we.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download your phone latest firmware from &lt;a href=&quot;https://sammobile.com/firmwares/archive&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Here, enter your phone name and select your country.&lt;/li&gt;
+  &lt;li&gt;Download the firmware. The firmware will be a zip file.&lt;/li&gt;
+  &lt;li&gt;Unzip the firmware.&lt;/li&gt;
+  &lt;li&gt;Download Odin from &lt;a href=&quot;https://github.com/sashuu6/root-samsung-note-8-exynos&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;installing-the-firmware&quot;&gt;Installing the Firmware&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open Odin.&lt;/li&gt;
+  &lt;li&gt;Select BL as the file whose name starts with BL.&lt;/li&gt;
+  &lt;li&gt;Do the same for the rest 3 buttons (Note: Select CSC rather than HOME_CSC). No need to add anything to USERDATA.&lt;/li&gt;
+  &lt;li&gt;Connect your phone is downloading mode (Volume down + bixby button + power button).&lt;/li&gt;
+  &lt;li&gt;Connect phone to the computer.&lt;/li&gt;
+  &lt;li&gt;Click start.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The flashing part takes time. After that, the phone will reboot and it will take some time. And guess what?, you have unbricked your Samsung Note 8.&lt;/p&gt;
+
+&lt;p&gt;Disclaimer: If you hard brick your phone. I am not responsible for it.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Working with Git</title><link href="https://www.sashwat.in/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T08:05:34+05:30</updated><id>https://www.sashwat.in/devops/git/working-with-git</id><content type="html" xml:base="https://www.sashwat.in/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
 
@@ -1067,87 +1096,4 @@ Now, we will enable indexing in the server.&lt;/p&gt;
 
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ firewall-cmd --zone=public --add-port=10000/tcp --permanent&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;$ firewall-cmd --reload&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">My Take On DevOps</title><link href="https://www.sashwat.in/devops/my-take-on-devops/" rel="alternate" type="text/html" title="My Take On DevOps" /><published>2018-10-17T00:00:00+05:30</published><updated>2018-10-17T18:35:34+05:30</updated><id>https://www.sashwat.in/devops/my-take-on-devops</id><content type="html" xml:base="https://www.sashwat.in/devops/my-take-on-devops/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-take-on-devops/devops-cover.png&quot; alt=&quot;DevOps&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-devops&quot;&gt;What is DevOps?&lt;/h2&gt;
-
-&lt;p&gt;I heard this term first when I was doing my internship at Appfabs. They focused on DevSecOps as they were a Security based company. So, to understand DevSecOps, I had to know what is DevOps. The first thing I was told that DevOps is a methodology, not a technology. DevOps is a methodology used in SDLC (Software Development Life Cycle) where the development team and operations team work together from designing stage to production support. To understand DevOps and why DevOps was introduced, we need to know the methods used before DevOps was introduced.&lt;/p&gt;
-
-&lt;p&gt;All these started when the waterfall model was introduced into SDLC. This model was best suited when:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;The product requirements are clear and fixed.&lt;/li&gt;
-  &lt;li&gt;The product definition is stable. That is, the product’s client has a clear cut idea on how the product must be.&lt;/li&gt;
-  &lt;li&gt;The project has very least risk during development.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The main disadvantages using this method was:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;It was slow.&lt;/li&gt;
-  &lt;li&gt;Change implement was slow.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As in software field, slow means loss. Using this method in huge and sensitive projects gave companies huge losses.
-Keeping the disadvantages in mind, a new model was introduced that could fix all the disadvantages of the waterfall model. Thus, came the Agile methodology.
-Agile methodology brought continuous iteration in product development and testing throughout the SDLC.&lt;/p&gt;
-
-&lt;p&gt;The Agile methodology is bested when:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;The product requirements frequently change.&lt;/li&gt;
-  &lt;li&gt;The product requires faster development.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And guess what? even this method didn’t work out for many companies, due to:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Lack of agility in the operations phase of the product lifecycle.&lt;/li&gt;
-  &lt;li&gt;The issue in the code environment. That is, the code works perfectly fine in developer’s PC, but won’t work on the production environment (Server).&lt;/li&gt;
-  &lt;li&gt;The deployment of the product is linear.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To solve the disadvantages in agile methodology, the DevOps was introduced. The DevOps was best suited when:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;The product’s requirement changed frequently.&lt;/li&gt;
-  &lt;li&gt;When the Operations team needs to become agile.&lt;/li&gt;
-  &lt;li&gt;For bridging the gap between the development team and the operations team.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To understand DevOps better, we will learn a case study of a big shot company like Facebook who finally used DevOps due to their product’s need. In 2011, Facebook introduced a major update that includes many cool features like timeline support, music support and many more. The public was notified about this new release. As Facebook as a huge hit during that time, all the active Facebook users (almost 500 million) started using Facebook to use these features. As Facebook’s servers during that time were not prepared to handle this huge traffic, it got shut down causing a server meltdown. Added to this major issue, the new features got a mixed opinion among the users. That is, many users loved it, other users absolutely hated it and few requested for modification. These kinds of reaction created a chaotic situation in Facebook headquarters. To solve this issue, they brought in DevOps and introduced a technique called “Dark Launching”. The “Dark Launching” is a type of product release technique in which:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;New features will be first released to a smaller group of users (mainly internal BETA testers). There will be constant communication between the team and the BETA testers. The communication involves taking feedback and other techniques that help to improve the features to the user’s need.&lt;/li&gt;
-  &lt;li&gt;When the team gets an assurance that the features can be released to the public, they release it to public BETA and then to the public through multiple product releases.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-take-on-devops/devops-fb-example.png&quot; alt=&quot;Facebook dark launching&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Facebook achieves “Dark Launching” via the use of the delivery pipeline. A delivery pipeline is a set of steps that a code goes through till it reached production. A pipeline contains an automated building, testing and deploying tools that work together till the product’s release.&lt;/p&gt;
-
-&lt;p&gt;So after learning a case, we can say that “DevOps is a software development approach that involves continuous development, testing, integration, deployment and monitoring throughout the development cycle.”&lt;/p&gt;
-
-&lt;h2 id=&quot;devops-lifecycles&quot;&gt;DevOps Lifecycles&lt;/h2&gt;
-
-&lt;p&gt;The lifecycle represents the stages in DevOps:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Continuous Development: The continuous development involves the product’s development is split into smaller development cycles.&lt;/li&gt;
-  &lt;li&gt;Continuous Testing: This cycle involves the Quality Assurance team identifying any bugs or errors in the code after every development cycle.&lt;/li&gt;
-  &lt;li&gt;Continuous Integration: This cycle involves integrating the new code with the existing code present in the production environment.&lt;/li&gt;
-  &lt;li&gt;Continuous Deployment: This cycle involves the deployment of code into the environment. The deployment is done in such a way that, it doesn’t affect the product’s current network traffic.&lt;/li&gt;
-  &lt;li&gt;Continuous Monitoring: The monitoring helps the team to monitor changes in the application after every lifecycle.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;devops-tools&quot;&gt;DevOps Tools&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-take-on-devops/devops-tools.png&quot; alt=&quot;DevOps tools from edureka&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The main advantage that DevOps gave us is “Automation”. The developer can automate the whole operations process in the software lifecycle. Automation in DevOps is achieved using tools at different stages of its cycle.
-The following tools (that I have used) are used at different stages:-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Plan - Jira&lt;/li&gt;
-  &lt;li&gt;Code - Git&lt;/li&gt;
-  &lt;li&gt;Build - Gradle, Maven&lt;/li&gt;
-  &lt;li&gt;Test - Selenium, JUnit&lt;/li&gt;
-  &lt;li&gt;Integrate - Jenkins&lt;/li&gt;
-  &lt;li&gt;Deploy - Docker&lt;/li&gt;
-  &lt;li&gt;Operate - Ansible&lt;/li&gt;
-  &lt;li&gt;Monitor - Nagios, slack&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Let’s consider an example of a company that has implemented DevOps methodology in their product and have used few tools for automation. The tool Jenkins (integration tool) detects changes in code and automatically triggers a build using tools like Gradle or Maven. After the build, Jenkins will deploy the code for testing. The testing is done by test tools like Selenium (if web app), JUnit (For Java apps) or any other testing tool. The deployment is handled using Docker. The running code is then monitored by tools like Nagios, Splunk or ELK Slack.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry></feed>
