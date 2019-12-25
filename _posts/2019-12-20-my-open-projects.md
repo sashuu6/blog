@@ -17,7 +17,7 @@ My desire to perform open source contributions started when I met my senior Ashw
 
 After the fest, I started aquiring more knowledge on micro-controllers and hardware programming and at later stages, I started taking workshops on those topics. For sharing the study materials, I used add the contents to git repositories and share them.
 
-I have used git to version control all my lab programs I used to do when I was at CET from S1 to mini and final projects S6. I have used Git and Github develop and host my CV website, CV and blog.
+I have used git to version control all my lab programs I used to do when I was at CET from S1 to mini project S5 (S6 not complete yet). I have used Git and Github develop and host my CV website, CV and blog.
 
 ## My Projects
 
