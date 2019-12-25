@@ -19,7 +19,7 @@ After the fest, I started aquiring more knowledge on micro-controllers and hardw
 
 I have used git to version control all my lab programs I used to do when I was at CET from S1 to mini and final projects S6. I have used Git and Github develop and host my CV website, CV and blog.
 
-These are some of the honourable projects I will done till 2019. But, when I look back at this post for few years, I will be very disappointed at my old me.
+These are some of the honourable projects I will done till 2019. But, when I look back at this post for few years, I will be very disappointed at my old me. Each of the following projects has a story to tell.
 
 1. 3 Factor Authentication lock.
 2. Python fingerprint recognition.
@@ -29,3 +29,5 @@ These are some of the honourable projects I will done till 2019. But, when I loo
 6. vONE Atmega Board.
 7. Simple Home Automation.
 8. IOT water Level
+
+The [3 Factor authentication lock](https://github.com/sashuu6/3-factor-authenticated-door-lock) was 3 level authentication lock for safes and homes. The levels included key switch authentication, pin code authentication and RFid verification. This project was developed using Arduino Uno, NodeMCU, Multiplexer, key switch keypad and RFid. I made this project for Attingal Engineering College electronics competiton. They just didnt throw me out because there was nothing new in it. I felt very bad that day because they just gave a middile finger to my effort 😂.
