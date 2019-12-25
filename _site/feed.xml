@@ -1,25 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-24T23:49:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">My Open Source Projects</title><link href="http://localhost:4000/projects/open%20source/my-open-projects/" rel="alternate" type="text/html" title="My Open Source Projects" /><published>2019-12-20T00:00:00+05:30</published><updated>2019-12-20T13:35:34+05:30</updated><id>http://localhost:4000/projects/open%20source/my-open-projects</id><content type="html" xml:base="http://localhost:4000/projects/open%20source/my-open-projects/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-opensource-projects.jpg&quot; alt=&quot;My Open Source Projects&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-25T13:33:48+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sashwat’s Blog</title><subtitle>My tech and other stuff's blog</subtitle><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><entry><title type="html">My Open Source Projects</title><link href="http://localhost:4000/projects/open%20source/my-open-projects/" rel="alternate" type="text/html" title="My Open Source Projects" /><published>2019-12-20T00:00:00+05:30</published><updated>2019-12-20T13:35:34+05:30</updated><id>http://localhost:4000/projects/open%20source/my-open-projects</id><content type="html" xml:base="http://localhost:4000/projects/open%20source/my-open-projects/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/my-opensource-projects.jpg&quot; alt=&quot;My Open Source Projects&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;My desire to perform open source contributions started when I met my senior Ashwin Karuvally at my Post Graduation (MCA) at College of Engineering Trivandrum (CET). He was an open source contributor and a hardcore linux user.When I was at my first years, I was a windows user. Using windows was soley for playing games. He taught me why FOSS, Git and Linux and why open source contribution improves skills and lands a respectible job at top tier companies. I was very intersted in IOT and hardware programming. So I started making projects based on electronics. But before that, my contributions started by developing platform for CET MCA fest, DCOD. For that competition, I worked with the seniors to &lt;a href=&quot;https://github.com/sashuu6/debugger-dcod-mca-cet&quot;&gt;Debugger&lt;/a&gt; (For code decoding competion. It’s like hackerrank) and &lt;a href=&quot;https://github.com/sashuu6/reverse_engineering-dcod-mca-cet&quot;&gt;reverse engineering&lt;/a&gt; (Hack the given database and website code and answer questions).&lt;/p&gt;
+&lt;p&gt;My desire to perform open source contributions started when I met my senior Ashwin Karuvally at my Post Graduation (MCA) at College of Engineering Trivandrum (CET). He was an open source contributor and a hardcore linux user.When I was at my first years, I was a windows user. Using windows was soley for playing games. He taught me why FOSS, Git and Linux and why open source contribution improves skills and lands a respectible job at top tier companies. I was very intersted in IOT and hardware programming. So I started making projects based on electronics. But before that, my contributions started by developing platform for CET MCA fest, DCOD. For that competition, I worked with the seniors to &lt;a href=&quot;https://github.com/sashuu6/debugger-dcod-mca-cet&quot;&gt;Debugger&lt;/a&gt; (For code decoding competion. It’s like hackerrank), &lt;a href=&quot;https://github.com/sashuu6/reverse_engineering-dcod-mca-cet&quot;&gt;reverse engineering&lt;/a&gt; (Hack the given database and website code and answer questions) and &lt;a href=&quot;https://github.com/sashuu6/open_sesame-dcod-mca-cet&quot;&gt;Open Sesame&lt;/a&gt;(Password guessing game).&lt;/p&gt;
 
 &lt;p&gt;After the fest, I started aquiring more knowledge on micro-controllers and hardware programming and at later stages, I started taking workshops on those topics. For sharing the study materials, I used add the contents to git repositories and share them.&lt;/p&gt;
 
 &lt;p&gt;I have used git to version control all my lab programs I used to do when I was at CET from S1 to mini and final projects S6. I have used Git and Github develop and host my CV website, CV and blog.&lt;/p&gt;
 
-&lt;p&gt;These are some of the honourable projects I will done till 2019. But, when I look back at this post for few years, I will be very disappointed at my old me.&lt;/p&gt;
+&lt;h2 id=&quot;my-projects&quot;&gt;My Projects&lt;/h2&gt;
+
+&lt;p&gt;These are some of the honourable projects I will done till 2019. But, when I look back at this post for few years, I will be very disappointed at my old me. Each of the following projects has a story to tell.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;3 Factor Authentication lock.&lt;/li&gt;
   &lt;li&gt;Python fingerprint recognition.&lt;/li&gt;
   &lt;li&gt;Youtube Subscriber Count.&lt;/li&gt;
-  &lt;li&gt;Arduino Weather Station.&lt;/li&gt;
-  &lt;li&gt;Survellance Bot.&lt;/li&gt;
+  &lt;li&gt;Weather Station Project.&lt;/li&gt;
+  &lt;li&gt;Surveillance Bot.&lt;/li&gt;
   &lt;li&gt;vONE Atmega Board.&lt;/li&gt;
-  &lt;li&gt;Simple Home Automation.&lt;/li&gt;
-  &lt;li&gt;IOT water Level&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T08:05:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
+  &lt;li&gt;Digital Clock with Birthday Alarm.&lt;/li&gt;
+  &lt;li&gt;IOT water Level Indicator&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/sashuu6/3-factor-authenticated-door-lock&quot;&gt;3 Factor authentication lock&lt;/a&gt; was 3 level authentication lock for safes and homes. The levels included key switch authentication, pin code authentication and RFid verification. This project was developed using Arduino Uno, NodeMCU, Multiplexer, key switch keypad and RFid. I made this project for Attingal Engineering College electronics competiton. They just didnt throw me out because there was nothing new in it. I felt very bad that day because they just gave a middile finger to my effort 😂.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/kjanko/python-fingerprint-recognition&quot;&gt;Python fingerprint recognition&lt;/a&gt; is my first contribution to another project that belonged to a person I dont know. In this project I fixed the errors due to which the program was not working. It was a new and very satisfying feeling that I got when the owner accepted my pull request.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/sashuu6/youtube-sub-count&quot;&gt;Youtube Subscriber Count&lt;/a&gt; is a project I did for my friend &lt;a href=&quot;https://www.youtube.com/channel/UC3x_svxO5Dxl0VesjEMpuGg&quot;&gt;Zeno Modiff&lt;/a&gt;(Who is a youtuber). It is simple project developed using NodeMCU and OLED display. The display showed a his channel’s subscriber count and viewer count.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/theonlyakhil/weather_station_project&quot;&gt;Weather Station Project&lt;/a&gt; is a contribution I made for my friend &lt;a href=&quot;https://github.com/theonlyakhil/&quot;&gt;Akhil A B&lt;/a&gt;. The projectis developed using OLED display, DHT11, Moisure sensor and rain drop sensor.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/theonlyakhil/surveillance-robot&quot;&gt;Surveillance Bot&lt;/a&gt; is a robot developed using DHT11, PIR sensor, Pi Camera, ultrasonic sensors, Servo motor and motors for the movement.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/sashuu6/vOne&quot;&gt;vONE Atmega Board&lt;/a&gt; is my version of Arduino Uno. This version was developed for protyping products that used Atmega328p. The features include 2 5V pins, 3 3.3V pins, 5 ground pins, extra voltage filtering and FTDI for flashing and debugging purposes.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/sashuu6/digital-clock-with-birthday-alarm&quot;&gt;Digital Clock with Birthday Alarm&lt;/a&gt; is a birthday alarm I made for a special person in my life. The project is developed Arduino UNO, OLED display and RTC module. This alarm shows date and time and displays “Happy Birthday” on birthday date.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/sashuu6/cet-mca-s5-miniproject-iot_based_water_level_indicator&quot;&gt;IOT Water Level Indicator&lt;/a&gt; is the most complex project I have worked yet. This project was done as a part of my mini project during my 5th semester at CET. The details about the projects is the repository. During this project, I have worked on a lot of new concepts and learned many new things.&lt;/p&gt;
+
+&lt;h2 id=&quot;honourable-mentions&quot;&gt;Honourable Mentions&lt;/h2&gt;
+
+&lt;p&gt;Some of the other projects include &lt;a href=&quot;https://github.com/sashuu6/blog&quot;&gt;my blog&lt;/a&gt;, &lt;a href=&quot;https://github.com/sashuu6/curriculum-vitae&quot;&gt;my current CV&lt;/a&gt; and &lt;a href=&quot;https://github.com/sashuu6/sashuu6.github.io&quot;&gt;my portfolio site&lt;/a&gt; are open-source and available for anyone to fork. My blog is built on Jekyll, My CV is built using Latex and my porfolio site is built using HTML,CSS and Javascript.&lt;/p&gt;
+
+&lt;h2 id=&quot;future-projects&quot;&gt;Future Projects&lt;/h2&gt;
+
+&lt;p&gt;My future projects include:-&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sashuu6/3d-printer&quot;&gt;3D printer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;CNC Machine&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sashuu6/raspberry-pi3-cluster&quot;&gt;Raspberry Pi Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thanking for having patience for reading my small blog.&lt;/p&gt;</content><author><name>Sashwat K</name><email>sashwat0001@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Working with Git</title><link href="http://localhost:4000/devops/git/working-with-git/" rel="alternate" type="text/html" title="Working with Git" /><published>2019-02-13T00:00:00+05:30</published><updated>2019-03-01T08:05:34+05:30</updated><id>http://localhost:4000/devops/git/working-with-git</id><content type="html" xml:base="http://localhost:4000/devops/git/working-with-git/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/working-with-git/working-with-git.jpeg&quot; alt=&quot;Working-with-Git&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
 
