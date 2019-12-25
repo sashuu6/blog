@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>PHP and MySQL Installation and Why no need for Web Server | Sashwat’s Blog</title>
+<!-- begin _includes/seo.html --><title>Install Pi Hole | Sashwat’s Blog</title>
 <meta name="description" content="">
 
 
@@ -17,27 +17,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Sashwat's Blog">
-<meta property="og:title" content="PHP and MySQL Installation and Why no need for Web Server">
-<meta property="og:url" content="https://www.sashwat.in/web/PHP-installation/">
+<meta property="og:title" content="Install Pi Hole">
+<meta property="og:url" content="https://www.sashwat.in/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole/">
 
 
   <meta property="og:description" content="">
 
 
 
-  <meta property="og:image" content="https://www.sashwat.in/assets/images/blog/setting-Up-localhost.jpg">
+  <meta property="og:image" content="https://www.sashwat.in/assets/images/blog/install-pi-hole.png">
 
 
 
   <meta name="twitter:site" content="@blackisashu">
-  <meta name="twitter:title" content="PHP and MySQL Installation and Why no need for Web Server">
+  <meta name="twitter:title" content="Install Pi Hole">
   <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="https://www.sashwat.in/web/PHP-installation/">
+  <meta name="twitter:url" content="https://www.sashwat.in/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://www.sashwat.in/assets/images/blog/setting-Up-localhost.jpg">
+      <meta name="twitter:image" content="https://www.sashwat.in/assets/images/blog/install-pi-hole.png">
     
   
 
@@ -45,11 +45,11 @@
 
 
 
-  <meta property="article:published_time" content="2018-11-15T00:00:00+05:30">
+  <meta property="article:published_time" content="2019-03-15T00:00:00+05:30">
 
 
 
-  <meta property="article:modified_time" content="2018-11-15T18:35:34+05:30">
+  <meta property="article:modified_time" content="2019-12-20T13:35:34+05:30">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://www.sashwat.in/web/PHP-installation/">
+<link rel="canonical" href="https://www.sashwat.in/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole/">
 
 
 
@@ -182,7 +182,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/categories/#web" itemprop="item"><span itemprop="name">Web</span></a>
+          <a href="/categories/#linux" itemprop="item"><span itemprop="name">Linux</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -190,7 +190,37 @@
     
       
       
-        <li class="current">PHP and MySQL Installation and Why no need for Web Server</li>
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/categories/#networking" itemprop="item"><span itemprop="name">Networking</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/categories/#pi-hole" itemprop="item"><span itemprop="name">Pi hole</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/categories/#raspberry-pi" itemprop="item"><span itemprop="name">Raspberry pi</span></a>
+          <meta itemprop="position" content="5" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Install Pi Hole</li>
       
     
   </ol>
@@ -338,15 +368,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="PHP and MySQL Installation and Why no need for Web Server">
+    <meta itemprop="headline" content="Install Pi Hole">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="November 15, 2018">
-    <meta itemprop="dateModified" content="November 15, 2018">
+    <meta itemprop="datePublished" content="March 15, 2019">
+    <meta itemprop="dateModified" content="December 20, 2019">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">PHP and MySQL Installation and Why no need for Web Server
+          <h1 id="page-title" class="page__title" itemprop="headline">Install Pi Hole
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -354,7 +384,7 @@
 
 
 
-  3 minute read
+  1 minute read
 </p>
           
         </header>
@@ -362,184 +392,51 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><img src="/assets/images/blog/setting-Up-localhost.jpg" alt="setting-up-localhost" /></p>
+        <p><img src="/assets/images/blog/install-pi-hole.png" alt="Install Pi Hole" /></p>
 
-<h1 id="why-setup-localhost">Why setup localhost</h1>
+<h2 id="introduction">Introduction</h2>
 
-<p>PHP: Hypertext Pre-Processor is an open-source server-side scripting language used for web development. If you are reading this blog, it’s pretty evident that you know how to use PHP and you are now trying to install PHP in your computer. As PHP is a server-side scripting language, the developer can run any PHP code via the browser.</p>
+<p>At this stage of every movement in virtual space being tracked for advertisement and malware. There is a need for an Ad blocker that blocks ads and trackers.</p>
 
-<h1 id="usual-php-installation">Usual PHP installation</h1>
+<h2 id="what-is-pi-hole">What is Pi Hole?</h2>
 
-<p>Usually, for working on PHP, the developer has to install:-</p>
+<p>Pi hole is a DNS sinkhole that protects the devices from unwanted content. A DNS sinkhole outputs false results for a domain name.</p>
+
+<h2 id="why-pi-hole-raspberry-pi">Why Pi hole Raspberry Pi</h2>
+
+<p>Using a dedicated hardware is always best rather than deploying on VMs. As raspberry pi is a cheap alternative for deploying Pi hole as a dedicated hardware. Use Ethernet for connection rather than WiFi because It is dedicated and more reliable. So use Raspberry Pis with Ethernet RJ45. Try to avoid Raspberry Pi Zero for deploying Pi hole.</p>
+
+<h2 id="instructions-to-install-pi-hole">Instructions to install Pi Hole</h2>
+
 <ol>
-  <li>Web Server</li>
-  <li>MySQL (if you are using database)</li>
-  <li>PHP</li>
+  <li>Get raspbian lite image onto your microSD card.
+    <ol>
+      <li>Download Raspbian Lite from <a href="https://www.raspberrypi.org/downloads/raspbian/">here</a>.</li>
+      <li>Download Ecther from <a href="https://www.balena.io/etcher/">here</a> and install it.</li>
+      <li>Burn the operating system into the SD card.</li>
+    </ol>
+  </li>
+  <li>After buring the sdcard, connect the card to the Pi and connect the ethernet to the pi and connect the power cable.</li>
+  <li>When the Pi boots up, get the IP address of the pi.</li>
+  <li>ssh to the pi.<br /> <code class="highlighter-rouge">$ ssh pi@ip-address</code></li>
+  <li>The password of pi is raspberry.</li>
+  <li>Install pi hole using the following command.<br /> <code class="highlighter-rouge">$ curl -sSL https://install.pi-hole.net | bash</code></li>
+  <li>Follow the steps to complete the installation.</li>
+  <li>Set the IP address of the pi as DNS in router configuration.</li>
 </ol>
 
-<h1 id="types-of-installation">Types of Installation</h1>
+<p>To access the Pi hole settings, type the following on the browser.</p>
 
-<p>Depending on your operating system, the installatio can be classified into:-</p>
-<ol>
-  <li>MAMP Server (Mac, Apache2, MySQL, PHP)</li>
-  <li>LAMP Server (Linux, Apache2, MySQL, PHP)</li>
-  <li>WAMP Server (Windows, Apache2, MySQL, PHP)</li>
-  <li>X-AMPP Server (Any Operating system, Apache2, MySQL, PHP, Perl)</li>
-</ol>
+<p>http://ip-address/admin</p>
 
-<h1 id="why-install-web-server-or-why-not-install-web-server">Why Install Web Server or Why not Install Web Server</h1>
-
-<p>Web server is required if you are setting up a server. If you are setting up for development. You can run your PHP code using the following command.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ php -S 0.0.0.0:8080
-</code></pre></div></div>
-
-<p>After executing the command, you can open the address in your browser to open your site.</p>
-
-<h1 id="installing-mamp-server">Installing MAMP Server</h1>
-
-<p>I have already written a blog on how to setup a server on Mac in <a href="https://www.sashwat.in/linux/macos/setup-localhost-mac/">this link</a>. Just skip install web server (Apache) (If for setting up localhost). There is another way to install a MAMP server. There is a application named MAMP server that can be used to activate web server on a click. To install, goto <a href="https://www.mamp.info/en/">this link</a>. Just install the .dmg and follow the instructions to install the MAMP server.</p>
-
-<h1 id="installing-lamp-server">Installing LAMP Server</h1>
-
-<h2 id="fedora">Fedora</h2>
+<p>You can do the following in pi hole console:-</p>
 
 <ol>
-  <li>First, we will update the system.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum update
-</code></pre></div>    </div>
-  </li>
-  <li>Let’s install web server (Dont install if for localhost).
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install httpd
-</code></pre></div>    </div>
-  </li>
-  <li>Let’s start the httpd service.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service httpd start
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we will install MySQL for working on databases.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install mysql mysql-server
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we will start MySQL service.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service mysqld start
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we have to setup root password for MySQL.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo /usr/bin/mysql_secure_installation
-</code></pre></div>    </div>
-  </li>
-  <li>Let’s install PHP.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install php php-mysql
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we have to configure the server and MySQL service to start automatically after every boot. If for localhost, don’t configure the server. Just configure MySQL.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo chkconfig httpd on
-$ sudo chkconfig mysqld on
-</code></pre></div>    </div>
-  </li>
-  <li>For server, to check, we will create a PHP file in web home directory.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /var/www/html/info.php
-</code></pre></div>    </div>
-  </li>
-  <li>To check if PHP is working, we will run phpinfo().
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo echo "&lt;?php phpinfo(); ?&gt;" &gt;&gt; /var/www/html/info.php
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Open browser and goto localhost/info.php. If PHP not working, you will get a blank page or the php code will be visible.</p>
-  </li>
-  <li>If you want to use phpmyadmin, install phpmyadmin by using the following command. If you are using phpmyadmin, then you have to install web server.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo dnf -y install phpMyAdmin php-mysqlnd php-mcrypt php-php-gettext
-</code></pre></div>    </div>
-  </li>
-  <li>Restart apache server.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl restart httpd
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h2 id="rhel--centos">RHEL / CentOS</h2>
-
-<ol>
-  <li>Update the system.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum update
-</code></pre></div>    </div>
-  </li>
-  <li>Install web server.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install httpd
-</code></pre></div>    </div>
-  </li>
-  <li>Add firewall exception to HTTP service.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ firewall-cmd --permanent --add-service=http
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we have to restart firewall to implement changes.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ systemctl restart firewalld
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we open port 80 in firewall.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ firewall-cmd —add-port=80/tcp
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we will install PHP.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install php php-mysql php-pdo php-gd php-mbstring
-</code></pre></div>    </div>
-  </li>
-  <li>We will check if PHP is working by running phpinfo().
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo "&lt;?php phpinfo(); ?&gt;" &gt;&gt; /var/www/html/info.php 
-</code></pre></div>    </div>
-    <p>Now check if PHP is working by opening localhost/info.php in your browser.</p>
-  </li>
-  <li>Now, we will install mariaDB for database.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install mariadb-server mariadb
-</code></pre></div>    </div>
-  </li>
-  <li>Start the database service.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl start mariadb
-</code></pre></div>    </div>
-  </li>
-  <li>Now, we have to setup root password for MySQL.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mysql_secure_installation
-</code></pre></div>    </div>
-  </li>
-  <li>To install phpmyadmin.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo yum install http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
-$ sudo yum install phpmyadmin
-</code></pre></div>    </div>
-  </li>
-  <li>We have to edit phpmyadmin configuration file.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ nano /etc/httpd/conf.d/phpmyadmin.conf
-</code></pre></div>    </div>
-  </li>
-  <li>Remove # (comment) from the following lines inside the file.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Order Deny,Allow
-Deny from all
-Allow from 127.0.0.1
-</code></pre></div>    </div>
-  </li>
-  <li>Now we have to enable httpd and mariadb so that they will start automatically after every boot.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ systemctl enable mariadb
-$ systemctl enable httpd
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h1 id="installing-wampserver">Installing WAMPSERVER</h1>
-
-<ol>
-  <li>Download Wampserver using <a href="http://www.wampserver.com/en/#download-wrapper">this link</a>.</li>
-  <li>Open installation file and follow the steps to install it to the system.</li>
-  <li>Open wampserver to enable webserver, database and PHP.</li>
-  <li>To check if wampserver is working, goto http://localhost in the browser.</li>
-</ol>
-
-<h1 id="installing-xampp-server">Installing XAMPP server</h1>
-
-<ol>
-  <li>Download XAMPP using <a href="https://www.apachefriends.org/index.html">this link</a>. Download the installation file for your operating system.</li>
-  <li>Install it by following the instructions.</li>
-  <li>Open XAMPP to enable apache, mysql and php.</li>
+  <li>Query logs</li>
+  <li>Graph analysis</li>
+  <li>Whitelist URLs</li>
+  <li>Blacklist URLs</li>
+  <li>Disable pi hole</li>
 </ol>
 
         
@@ -563,14 +460,26 @@ $ systemctl enable httpd
     
       
       
-      <a href="/categories/#web" class="page__taxonomy-item" rel="tag">Web</a>
+      <a href="/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#networking" class="page__taxonomy-item" rel="tag">Networking</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#pi-hole" class="page__taxonomy-item" rel="tag">Pi Hole</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry Pi</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-15">November 15, 2018</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-12-20">December 20, 2019</time></p>
         
       </footer>
 
@@ -579,24 +488,24 @@ $ systemctl enable httpd
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=PHP+and+MySQL+Installation+and+Why+no+need+for+Web+Server%20https%3A%2F%2Fwww.sashwat.in%2Fweb%2FPHP-installation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Install+Pi+Hole%20https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fnetworking%2Fpi%2520hole%2Fraspberry%2520pi%2Finstall-pi-hole%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sashwat.in%2Fweb%2FPHP-installation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fnetworking%2Fpi%2520hole%2Fraspberry%2520pi%2Finstall-pi-hole%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.sashwat.in%2Fweb%2FPHP-installation%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fnetworking%2Fpi%2520hole%2Fraspberry%2520pi%2Finstall-pi-hole%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.sashwat.in%2Fweb%2FPHP-installation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.sashwat.in%2Flinux%2Fnetworking%2Fpi%2520hole%2Fraspberry%2520pi%2Finstall-pi-hole%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/devops/docker/devops-tool-docker/" class="pagination--pager" title="DevOps Tool : Docker
+      <a href="/devops/git/working-with-git/" class="pagination--pager" title="Working with Git
 ">Previous</a>
     
     
-      <a href="/raspberry%20pi/home%20automation/simple-home-automation/" class="pagination--pager" title="Simple Home Automation using Pi Zero W, Particle.io, Google assistant and IFTTT
+      <a href="/android/rooting/samsung/note%208/exynos/unbrick-samsung-note-9/" class="pagination--pager" title="Unbrick Samsung Note 8
 ">Next</a>
     
   </nav>
@@ -730,14 +639,14 @@ $ systemctl enable httpd
       <div class="archive__item-teaser">
         <img src=
           
-            "/assets/images/blog/install-pi-hole.png"
+            "/assets/images/blog/working-with-git/working-with-git.jpeg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole/" rel="permalink">Install Pi Hole
+        <a href="/devops/git/working-with-git/" rel="permalink">Working with Git
 </a>
       
     </h2>
@@ -747,7 +656,7 @@ $ systemctl enable httpd
 
 
 
-  1 minute read
+  4 minute read
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">
@@ -835,8 +744,8 @@ $ systemctl enable httpd
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://www.sashwat.in/web/PHP-installation/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/web/PHP-installation"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://www.sashwat.in/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
