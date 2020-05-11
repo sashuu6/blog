@@ -18,26 +18,26 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Sashwat's Blog">
 <meta property="og:title" content="Simple Home Automation using Pi Zero W, Particle.io, Google assistant and IFTTT">
-<meta property="og:url" content="https://www.sashwat.in/raspberry%20pi/home%20automation/simple-home-automation/">
+<meta property="og:url" content="http://localhost:4000/projects/raspberry%20pi/home%20automation/simple-home-automation/">
 
 
   <meta property="og:description" content="">
 
 
 
-  <meta property="og:image" content="https://www.sashwat.in/assets/images/blog/simple-home-automation/simple-home-automation.png">
+  <meta property="og:image" content="http://localhost:4000/assets/images/blog/simple-home-automation/simple-home-automation.png">
 
 
 
   <meta name="twitter:site" content="@blackisashu">
   <meta name="twitter:title" content="Simple Home Automation using Pi Zero W, Particle.io, Google assistant and IFTTT">
   <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="https://www.sashwat.in/raspberry%20pi/home%20automation/simple-home-automation/">
+  <meta name="twitter:url" content="http://localhost:4000/projects/raspberry%20pi/home%20automation/simple-home-automation/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://www.sashwat.in/assets/images/blog/simple-home-automation/simple-home-automation.png">
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/blog/simple-home-automation/simple-home-automation.png">
     
   
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://www.sashwat.in/raspberry%20pi/home%20automation/simple-home-automation/">
+<link rel="canonical" href="http://localhost:4000/projects/raspberry%20pi/home%20automation/simple-home-automation/">
 
 
 
@@ -71,7 +71,7 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Sashwat K",
-      "url": "https://www.sashwat.in",
+      "url": "http://localhost:4000",
       "sameAs": null
     }
   </script>
@@ -174,7 +174,7 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://www.sashwat.in/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
@@ -182,7 +182,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/categories/#raspberry-pi" itemprop="item"><span itemprop="name">Raspberry pi</span></a>
+          <a href="/categories/#projects" itemprop="item"><span itemprop="name">Projects</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -192,8 +192,18 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/categories/#home-automation" itemprop="item"><span itemprop="name">Home automation</span></a>
+          <a href="/categories/#raspberry-pi" itemprop="item"><span itemprop="name">Raspberry pi</span></a>
           <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/categories/#home-automation" itemprop="item"><span itemprop="name">Home automation</span></a>
+          <meta itemprop="position" content="4" />
         </li>
         <span class="sep">/</span>
       
@@ -433,32 +443,46 @@
   <li>Flash the image to an SD card via the etcher.</li>
   <li>Remove and insert sdcard into the system.</li>
   <li>Create a file ssh inside boot.</li>
-  <li>Create another file named wpa_supplicant.conf inside boot and add the following code to insert Wi-Fi credentials.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+  <li>Create another file named wpa_supplicant.conf inside boot and add the following code to insert Wi-Fi credentials.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
- ssid="YOUR_NETWORK_NAME"
- psk="YOUR_PASSWORD"
- key_mgmt=WPA-PSK
+    ssid="YOUR_NETWORK_NAME"
+    psk="YOUR_PASSWORD"
+    key_mgmt=WPA-PSK
 }
-</code></pre></div>    </div>
-    <p>Replace YOUR_NETWORK_NAME with your WiFi’s ssid and YOUR_PASSWORD with it’s password.</p>
-  </li>
+</code></pre></div></div>
+
+<p>Replace YOUR_NETWORK_NAME with your WiFi’s ssid and YOUR_PASSWORD with it’s password.</p>
+
+<ol>
   <li>Now, insert the sdcard inside the Raspberry Pi Zero W and fire up the Pi.</li>
   <li>Find the Raspberry Pi’s IP address. You can do that by using applications like Fing.</li>
   <li>now ssh to the Pi using your Linux or Mac system. If you are using Windows ( First of all goto hell because you are using Windows), then download putty to ssh to the Pi.</li>
-  <li>To SSH into the Pi.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh pi@ipaddress
-</code></pre></div>    </div>
-  </li>
-  <li>Now, update and upgrade the Pi.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt update &amp;&amp; apt upgrade
-</code></pre></div>    </div>
-  </li>
-  <li>Install particle.io client into the Pi.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bash &lt;( curl -sL https://particle.io/install-pi )
-</code></pre></div>    </div>
-    <p>You will be asked to enter your particle.io username and password. Also add the name of the Pi. Now the Pi is setup.</p>
-  </li>
+  <li>To SSH into the Pi.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh pi@ipaddress
+</code></pre></div></div>
+
+<ol>
+  <li>Now, update and upgrade the Pi.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt update &amp;&amp; apt upgrade
+</code></pre></div></div>
+
+<ol>
+  <li>Install particle.io client into the Pi.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bash &lt;( curl -sL https://particle.io/install-pi )
+</code></pre></div></div>
+
+<p>You will be asked to enter your particle.io username and password. Also add the name of the Pi. Now the Pi is setup.</p>
+
+<ol>
   <li>Now upload the code to the Pi (Present on the left side of the WebIDE).
 <img src="/assets/images/blog/simple-home-automation/particle-io-2.png" alt="Particle.io Pin Diagram" /></li>
 </ol>
@@ -526,6 +550,10 @@ Watch the following video for demo.</p>
     
       
       
+      <a href="/categories/#projects" class="page__taxonomy-item" rel="tag">Projects</a><span class="sep">, </span>
+    
+      
+      
       <a href="/categories/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry Pi</a>
     
     </span>
@@ -542,13 +570,13 @@ Watch the following video for demo.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Simple+Home+Automation+using+Pi+Zero+W%2C+Particle.io%2C+Google+assistant+and+IFTTT%20https%3A%2F%2Fwww.sashwat.in%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=blackisashu&text=Simple+Home+Automation+using+Pi+Zero+W%2C+Particle.io%2C+Google+assistant+and+IFTTT%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sashwat.in%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.sashwat.in%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.sashwat.in%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fraspberry%2520pi%2Fhome%2520automation%2Fsimple-home-automation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -574,6 +602,41 @@ Watch the following video for demo.</p>
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/blog/2-factor-door-lock/2-factor-door-lock.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/projects/arduino%20uno/2-factor-door-locks/" rel="permalink">2-Factor Door Lock
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
         
           
 
@@ -683,42 +746,6 @@ Watch the following video for demo.</p>
   </article>
 </div>
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/blog/install-pi-hole.png"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/linux/networking/pi%20hole/raspberry%20pi/install-pi-hole/" rel="permalink">Install Pi Hole
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-        
       </div>
     </div>
   
@@ -776,7 +803,7 @@ Watch the following video for demo.</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Sashwat K. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>. <a href="https://www.freeprivacypolicy.com/privacy/view/8e94155265d9bc4e96576c0af31f939a">Privacy policy</a></div>
+<div class="page__footer-copyright">&copy; 2020 Sashwat K. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>. <a href="https://www.freeprivacypolicy.com/privacy/view/8e94155265d9bc4e96576c0af31f939a">Privacy policy</a></div>
 
       </footer>
     </div>
@@ -798,8 +825,8 @@ Watch the following video for demo.</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://www.sashwat.in/raspberry%20pi/home%20automation/simple-home-automation/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/raspberry%20pi/home%20automation/simple-home-automation"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "http://localhost:4000/projects/raspberry%20pi/home%20automation/simple-home-automation/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/projects/raspberry%20pi/home%20automation/simple-home-automation"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
