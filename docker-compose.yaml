@@ -9,8 +9,8 @@ services:
     container_name: "sashwatk_blog"
     restart: "always"
     ports:
-      - "${UNSECURE_HOST_PORT}:80"
-      - "${SECURE_HOST_PORT}:443"
+      - "${BLOG_PORT}:80"
+      - "${BLOG_SECURE_HOST_PORT}:443"
     links:
       - blog_mysql
 
@@ -57,8 +57,8 @@ services:
     container_name: "sashwatk_portfolio"
     restart: "always"
     ports:
-      - "${UNSECURE_HOST_PORT}:80"
-      - "${SECURE_HOST_PORT}:443"
+      - "${PORTFOLIO_PORT}:80"
+      - "${PORTFOLIO_SECURE_HOST_PORT}:443"
     links:
       - portfolio_mysql
 
