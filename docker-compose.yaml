@@ -1,0 +1,98 @@
+version: "3.7"
+
+services:
+  # Blog
+  blog:
+    build:
+      context: ./bin/blog
+    image: sashuu6/sashwatk_site:blog0.0.1
+    container_name: "sashwatk_blog"
+    restart: "always"
+    ports:
+      - "${UNSECURE_HOST_PORT}:80"
+      - "${SECURE_HOST_PORT}:443"
+    links:
+      - blog_mysql
+
+  # MySQL Database for Blog
+  blog_mysql:
+    build:
+      context: ./bin/blog_mysql
+    image: sashuu6/sashwatk_site:blog_mysql0.0.1
+    container_name: "sashwatk_blog_mysql"
+    restart: "always"
+    ports:
+      - "${BLOG_HOST_MACHINE_MYSQL_PORT}"
+    volumes:
+      - ${MYSQL_DATA_DIR-./data/blog_mysql}:/var/lib/mysql
+      - ${MYSQL_LOG_DIR-./logs/blog_mysql}:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${BLOG_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${BLOG_MYSQL_DATABASE}
+      MYSQL_USER: ${BLOG_MYSQL_USER}
+      MYSQL_PASSWORD: ${BLOG_MYSQL_PASSWORD}
+
+  # PHPMyAdmin for Blog site
+  blog_phpmyadmin:
+    build:
+      context: ./bin/blog_phpmyadmin
+    image: sashuu6/sashwatk_site:blog_phpmyadmin0.0.1
+    container_name: "sashwatk_blog_mysql_phpmyadmin"
+    restart: "always"
+    links:
+      - blog_mysql
+    environment:
+      PMA_HOST: blog_mysql
+      PMA_PORT: ${BLOG_HOST_MACHINE_MYSQL_PORT}
+    ports:
+      - "${BLOG_PHPMYADMIN_PORT}:80"
+    volumes:
+      - /sessions_blog
+
+  # Portfolio
+  portfolio:
+    build:
+      context: ./bin/portfolio
+    image: sashuu6/sashwatk_site:portfolio0.0.1
+    container_name: "sashwatk_portfolio"
+    restart: "always"
+    ports:
+      - "${UNSECURE_HOST_PORT}:80"
+      - "${SECURE_HOST_PORT}:443"
+    links:
+      - portfolio_mysql
+
+  # MySQL Database for Portfolio
+  portfolio_mysql:
+    build:
+      context: ./bin/portfolio_mysql
+    image: sashuu6/sashwatk_site:portfolio_mysql0.0.1
+    container_name: "sashwatk_portfolio_mysql"
+    restart: "always"
+    ports:
+      - "${PORTFOLIO_HOST_MACHINE_MYSQL_PORT}"
+    volumes:
+      - ${MYSQL_DATA_DIR-./data/portfolio_mysql}:/var/lib/mysql
+      - ${MYSQL_LOG_DIR-./logs/portfolio_mysql}:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PORTFOLIO_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${PORTFOLIO_MYSQL_DATABASE}
+      MYSQL_USER: ${PORTFOLIO_MYSQL_USER}
+      MYSQL_PASSWORD: ${PORTFOLIO_MYSQL_PASSWORD}
+
+  # PHPMyAdmin for Portfolio site
+  portfolio_phpmyadmin:
+    build:
+      context: ./bin/portfolio_phpmyadmin
+    image: sashuu6/sashwatk_site:portfolio_phpmyadmin0.0.1
+    container_name: "sashwatk_portfolio_mysql_phpmyadmin"
+    restart: "always"
+    links:
+      - portfolio_mysql
+    environment:
+      PMA_HOST: portfolio_mysql
+      PMA_PORT: ${PORTFOLIO_HOST_MACHINE_MYSQL_PORT}
+    ports:
+      - "${PORTFOLIO_PHPMYADMIN_PORT}:80"
+    volumes:
+      - /sessions_portfolio
