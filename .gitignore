@@ -3,3 +3,4 @@
 data/*
 logs/*
 portfolio_env/*
+__pycache__
