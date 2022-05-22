@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% include 'head.html' %}
+</head>
+
+<body class="body-piling">
+    <div class="wrapper">
+
+        {% include 'navbar.html' %}
+        
+        <div id="content">
+            <div class="a-pagepiling full-page">
+
+                {% include 'pages/welcome.html' %}
+
+                {% include 'pages/about_me.html' %}
+
+                {% include 'pages/skills.html' %}
+
+                {% include 'pages/resume.html' %}
+
+                {% include 'pages/portfolio.html' %}
+
+                {% include 'pages/awards.html' %}
+
+                {% include 'pages/testimonials.html' %}
+
+                {% include 'pages/clients.html' %}          
+
+                {% include 'pages/contact_me.html' %}
+            </div>
+        </div>
+
+        {% include 'footer.html' %}
+
+        {% include 'sidepanel.html' %}
+
+
+    </div>
+
+
+    {% include 'tail.html' %}
+
+</body>
+
+</html>
