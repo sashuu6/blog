@@ -1,4 +1,5 @@
 {% block awards_section %}
+{% load static %}
 <div class="section pp-scrollable slide slide-awards slide-dark a-slide-typed" data-name="awards">
     <div class="slide-container">
         <div class="lines">
@@ -20,7 +21,7 @@
 
                     <div class="reward-list animate-element delay9 fadeInUp">
                         <div class="reward-item">
-                            <div class="reward-item-photo"><img src="nit-surathkal.png" alt=""
+                            <div class="reward-item-photo"><img src="{% static 'img/nit-surathkal.png' %}" alt=""
                                     width="69" /></div>
                             <div class="reward-item-detail">
                                 <div class="reward-item-title">NIT Surathkal</div>
@@ -29,7 +30,7 @@
                             </div>
                         </div>
                         <div class="reward-item">
-                            <div class="reward-item-photo"><img src="nit-trichy.png" alt=""
+                            <div class="reward-item-photo"><img src="{% static 'img/nit-trichy.png' %}" alt=""
                                     width="69" /></div>
                             <div class="reward-item-detail">
                                 <div class="reward-item-title">NIT Tiruchirappalli</div>
@@ -39,7 +40,7 @@
                             </div>
                         </div>
                         <div class="reward-item">
-                            <div class="reward-item-photo"><img src="nit-calicut.png" alt=""
+                            <div class="reward-item-photo"><img src="{% static 'img/nit-calicut.png' %}" alt=""
                                     width="69" /></div>
                             <div class="reward-item-detail">
                                 <div class="reward-item-title">NIT Calicut</div>
@@ -53,17 +54,17 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
                     <div class="slide-photo slide-photo6">
-                        <div class="inside"><img src="me3.jpg"
+                        <div class="inside"><img src="{% static 'img/me3.jpg' %}"
                                 style="border-radius: 2rem; box-shadow: -3px 5px 20px 0px;" /></div>
                         <div
                             class="image-card image-card-primary card6-1 animate-element delay8 fadeInLeft">
                             <div class="image-card-body">
-                                <div class="inside"><img src="img/card6-1.png" alt="" /></div>
+                                <div class="inside"><img src="{% static 'img/card6-1.png' %}" alt="" /></div>
                             </div>
                         </div>
                         <div class="image-card card6-2 animate-element delay11 fadeInLeft">
                             <div class="image-card-body">
-                                <div class="inside"><img src="img/card6-2.png" alt="" /></div>
+                                <div class="inside"><img src="{% static 'img/card6-2.png' %}" alt="" /></div>
                             </div>
                         </div>
                     </div>

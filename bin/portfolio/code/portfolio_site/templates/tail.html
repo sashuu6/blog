@@ -1,4 +1,5 @@
 {% block tail_section %}
+{% load static %}
 <div class="modal fade" id="request" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -34,20 +35,20 @@
     </div>
 </div>
 
-
+{% load static %}
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
-    window.jQuery || document.write('<script src="js/jquery.min.js"><script>')
+    window.jQuery || document.write('<script src="{% static 'js/jquery.min.js' %}"><script>')
 </script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.pagepiling.min.js"></script>
-<script src="js/jquery.viewport.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/script.js"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.pagepiling.min.js' %}"></script>
+<script src="{% static 'js/jquery.viewport.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/typed.min.js' %}"></script>
+<script src="{% static 'js/parallax.min.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock tail_section %}

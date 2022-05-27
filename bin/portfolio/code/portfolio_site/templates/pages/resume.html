@@ -1,4 +1,5 @@
 {% block resume_section %}
+{% load static %}
 <div class="section pp-scrollable slide slide-resume slide-dark">
     <div class="slide-container">
         <div class="lines">
@@ -15,7 +16,7 @@
                         <div
                             class="slide-photo-bg-rounded photo-bg-education animate-element delay5 bounceIn">
                             <div class="inside">
-                                <div class="education-image"><img src="college.jpg" class="pl-5 pt-2"
+                                <div class="education-image"><img src="{% static 'img/college.jpg' %}" class="pl-5 pt-2"
                                         style="border-radius: 2rem;" /></div>
                             </div>
                         </div>
@@ -43,7 +44,7 @@
                         <div
                             class="slide-photo-bg-rounded photo-bg-experience animate-element delay7 bounceIn">
                             <div class="inside">
-                                <div class="experience-image"><img src="work.jpg" class="pl-4 pt-3"
+                                <div class="experience-image"><img src="{% static 'img/work.jpg' %}" class="pl-4 pt-3"
                                         style="border-radius: 2rem;" /></div>
                             </div>
                         </div>

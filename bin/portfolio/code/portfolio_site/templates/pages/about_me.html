@@ -1,4 +1,5 @@
 {% block about_me_section %}
+{% load static %}
 <div class="section pp-scrollable slide slide-services slide-dark slide-services a-slide-typed" data-name="about">
     <div class="slide-container">
         <div class="lines">
@@ -37,7 +38,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
                     <div class="slide-photo slide-photo-services">
-                        <div class="inside"><img src="me2.jpg" style="border-radius: 2rem; box-shadow: -3px 5px 20px 0px;" /></div>
+                        <div class="inside"><img src="{% static 'img/me2.jpg' %}" style="border-radius: 2rem; box-shadow: -3px 5px 20px 0px;" /></div>
                     </div>
                 </div>
             </div>
