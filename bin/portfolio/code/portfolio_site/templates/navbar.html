@@ -2,8 +2,8 @@
 <header id="header" class="header">
     <div class="container-fluid">
         <div class="brand">
-            <a id="sashwat-text-logo" href="#Home" class="brand-name animated flash delay-2s">Sashwat <span
-                    class="brand-name-s">K</span></a>
+            <a id="sashwat-text-logo" href="#Home" class="brand-name animated flash delay-2s">{{user_firstname}} <span
+                    class="brand-name-s">{{user_lastname}}</span></a>
         </div>
         <button class="nav-toggle-btn a-nav-toggle">
             <span class="hamburger">
@@ -32,11 +32,11 @@
 
             <div class="menu-footer">
                 <div class="menu-footer-contacts">
-                    <div class="menu-footer-phone ">Sashwat K</div>
-                    <div class="menu-footer-mail"><a href="mailto:hi@sashwat.in"
-                            class="mail-link">hi@sashwat.in</a></div>
+                    <div class="menu-footer-phone ">{{user_fullname}}</div>
+                    <div class="menu-footer-mail"><a href="mailto:{{user_mail_id}}"
+                            class="mail-link">{{user_mail_id}}</a></div>
                 </div>
-                <div class="menu-footer-copyright">&copy; Sashwat 2022, All Rights Reserved.</div>
+                <div class="menu-footer-copyright">&copy; {{website_copyright}}</div>
             </div>
             <div class="menu-ornament"></div>
         </div>
