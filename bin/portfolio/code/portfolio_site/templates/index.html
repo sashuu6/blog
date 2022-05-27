@@ -1,83 +1,82 @@
+{% include 'head.html' %}
+{% include 'navbar.html' %}
+{% include 'pages/welcome.html' %}
+{% include 'pages/about_me.html' %}
+{% include 'pages/skills.html' %}
+{% include 'pages/resume.html' %}
+{% include 'pages/portfolio.html' %}
+{% include 'pages/awards.html' %}
+{% include 'pages/testimonials.html' %}
+{% include 'pages/clients.html' %}
+{% include 'footer.html' %}
+{% include 'sidepanel.html' %}
+{% include 'tail.html' %}
+
 <!doctype html>
 <html lang="en">
 
 <head>
-    {% include 'head.html' %}
+    {% block head_section %}
+
+    {% endblock head_section %}
 </head>
 
 <body class="body-piling">
-    <div class="wrapper">
+    <div class="wrapper">        
+        {% block navbar_section %}
 
-        {% include 'navbar.html' %}
-        
+        {% endblock navbar_section %}
         <div id="content">
             <div class="a-pagepiling full-page">
-
-                {% include 'pages/welcome.html' %}
-
                 {% block welcome_section %}
 
                 {% endblock welcome_section %}
-
-                {% include 'pages/about_me.html' %}
 
                 {% block about_me_section %}
 
                 {% endblock about_me_section %}
 
-                {% include 'pages/skills.html' %}
-
                 {% block skills_section %}
 
                 {% endblock skills_section %}
-
-                {% include 'pages/resume.html' %}
 
                 {% block resume_section %}
 
                 {% endblock resume_section %}
 
-                {% include 'pages/portfolio.html' %}
-
                 {% block porfolio_section %}
 
                 {% endblock porfolio_section %}
-
-                {% include 'pages/awards.html' %}
 
                 {% block awards_section %}
 
                 {% endblock awards_section %}
 
-                {% include 'pages/testimonials.html' %}
-
                 {% block testimonials_section %}
 
                 {% endblock testimonials_section %}
-
-                {% include 'pages/clients.html' %}
                 
                 {% block clients_section %}
 
                 {% endblock clients_section %}
-
-                {% include 'pages/contact_me.html' %}
 
                 {% block contact_me_section %}
 
                 {% endblock contact_me_section %}
             </div>
         </div>
+        {% block footer_section %}
 
-        {% include 'footer.html' %}
+        {% endblock footer_section %}
 
-        {% include 'sidepanel.html' %}
+        {% block side_panel_section %}
 
-
+        {% endblock side_panel_section %}
     </div>
 
+    {% block tail_section %}
 
-    {% include 'tail.html' %}
+    {% endblock tail_section %}
 
 </body>
 
