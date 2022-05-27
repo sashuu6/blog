@@ -15,21 +15,57 @@
 
                 {% include 'pages/welcome.html' %}
 
+                {% block welcome_section %}
+
+                {% endblock welcome_section %}
+
                 {% include 'pages/about_me.html' %}
+
+                {% block about_me_section %}
+
+                {% endblock about_me_section %}
 
                 {% include 'pages/skills.html' %}
 
+                {% block skills_section %}
+
+                {% endblock skills_section %}
+
                 {% include 'pages/resume.html' %}
+
+                {% block resume_section %}
+
+                {% endblock resume_section %}
 
                 {% include 'pages/portfolio.html' %}
 
+                {% block porfolio_section %}
+
+                {% endblock porfolio_section %}
+
                 {% include 'pages/awards.html' %}
+
+                {% block awards_section %}
+
+                {% endblock awards_section %}
 
                 {% include 'pages/testimonials.html' %}
 
-                {% include 'pages/clients.html' %}          
+                {% block testimonials_section %}
+
+                {% endblock testimonials_section %}
+
+                {% include 'pages/clients.html' %}
+                
+                {% block clients_section %}
+
+                {% endblock clients_section %}
 
                 {% include 'pages/contact_me.html' %}
+
+                {% block contact_me_section %}
+
+                {% endblock contact_me_section %}
             </div>
         </div>
 
