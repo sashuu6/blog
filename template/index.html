@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Sashwat K's Website. Sashwat K is a Senior Engineer at IBM ISDL! Cloud Software Developer | FOSS | Linux Enthusiast | Embedded Firmware Developer | DevOps Engineer | Ham Radio Enthusiast">
-    <meta name="author" content="Sashwat K">
-    <link rel="icon" type="image/x-icon" href="./assets/images/profile_photo/favicon.png">
+    <meta name="description" content="{{header.meta.description}}">
+    <meta name="author" content="{{header.title}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/profile_photo/favicon.png')}}">
 
-    <title>Sashwat K</title>
+    <title>{{header.title}}</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,20 +17,20 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/css/animate.min.css">
-    <link rel="stylesheet" href="./assets/css/smooth-scrollbar.css">
-    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/smooth-scrollbar.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/lightbox.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
 
 </head>
 <body class="home1-page">
 
     <video class="body-overlay" muted autoplay loop>
-        <source src="./assets/images/video5.mp4" type="video/mp4">
+        <source src="{{url_for('static', filename='images/video5.mp4')}}" type="video/mp4">
     </video>
 
     <!-- Preloader -->
@@ -96,21 +96,11 @@
             <div class="sidebar-social">
                 <p>Social</p>
                 <ul class="social-links d-flex align-items-center">
+                {%for item in body.social_links%}
                     <li>
-                        <a href="https://in.linkedin.com/in/sashwatk" target="_blank"><i class="lab la-linkedin"></i></a>
+                        <a href="{{body.social_links[item]}}" target="_blank"><i class="lab la-{{item}}"></i></a>
                     </li>
-                    <li>
-                        <a href="https://github.com/sashuu69" target="_blank"><i class="lab la-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/@sashuu69" target="_blank"><i class="lab la-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/sashuu69" target="_blank"><i class="lab la-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com/@sashuu69" target="_blank"><i class="lab la-facebook"></i></a>
-                    </li>
+                {%endfor%}
                 </ul>
             </div>
         </div>
@@ -161,31 +151,21 @@
 
     <div class="left-sidebar">
         <div class="sidebar-header d-flex align-items-center justify-content-between">
-            <img src="./assets/images/logo1.png" alt="Logo">
-            <span class="designation">Senior Engineer, IBM ISDL</span>
+            <img src="{{url_for('static', filename='images/logo.png')}}" alt="Logo">
+            <span class="designation">{{body.designation}}</span>
         </div>
-        <img class="me" src="./assets/images/profile_photo/me.jpg" alt="Me">
-        <h2 class="email">hi@sashwat.in</h2>
-        <h2 class="address">Base in Bangalore, India</h2>
-        <p class="copyright">&copy; 2023 Sashwat K. All Rights Reserved</p>
+        <img class="me" src="{{url_for('static', filename='images/profile_photo/me.jpg')}}" alt="Me">
+        <h2 class="email">{{body.mail_id}}</h2>
+        <h2 class="address">{{body.address}}</h2>
+        <p class="copyright">&copy; {{body.copyrights}}</p>
         <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+        {%for item in body.social_links%}
             <li>
-                <a href="https://in.linkedin.com/in/sashwatk" target="_blank"><i class="lab la-linkedin"></i></a>
+                <a href="{{body.social_links[item]}}" target="_blank"><i class="lab la-{{item}}"></i></a>
             </li>
-            <li>
-                <a href="https://github.com/sashuu69" target="_blank"><i class="lab la-github"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@sashuu69" target="_blank"><i class="lab la-youtube"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/sashuu69" target="_blank"><i class="lab la-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://facebook.com/@sashuu69" target="_blank"><i class="lab la-facebook"></i></a>
-            </li>
+        {%endfor%}
         </ul>
-        <a href="mailto:hi@sashwat.in" class="theme-btn">
+        <a href="mailto:{{body.mail_id}}" class="theme-btn">
             <i class="las la-envelope"></i> Connect!
         </a>
     </div>
@@ -196,31 +176,21 @@
 
                 <div class="left-sidebar">
                     <div class="sidebar-header d-flex align-items-center justify-content-between">
-                        <img src="./assets/images/logo1.png" alt="Logo">
-                        <span class="designation">Senior Engineer, IBM ISDL</span>
+                        <img src="{{url_for('static', filename='images/logo.png')}}" alt="Logo">
+                        <span class="designation">{{body.designation}}</span>
                     </div>
-                    <img class="me" src="./assets/images/profile_photo/me.jpg" alt="Me">
-                    <h2 class="email">hi@sashwat.in</h2>
-                    <h2 class="address">Base in Bangalore, India</h2>
-                    <p class="copyright">&copy; 2023 Sashwat K. All Rights Reserved</p>
+                    <img class="me" src="{{url_for('static', filename='images/profile_photo/me.jpg')}}" alt="Me">
+                    <h2 class="email">{{body.mail_id}}</h2>
+                    <h2 class="address">{{body.address}}</h2>
+                    <p class="copyright">&copy; {{body.copyrights}}</p>
                     <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                    {%for item in body.social_links%}
                         <li>
-                            <a href="https://in.linkedin.com/in/sashwatk" target="_blank"><i class="lab la-linkedin"></i></a>
+                            <a href="{{body.social_links[item]}}" target="_blank"><i class="lab la-{{item}}"></i></a>
                         </li>
-                        <li>
-                            <a href="https://github.com/sashuu69" target="_blank"><i class="lab la-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@sashuu69" target="_blank"><i class="lab la-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/sashuu69" target="_blank"><i class="lab la-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://facebook.com/@sashuu69" target="_blank"><i class="lab la-facebook"></i></a>
-                        </li>
+                    {%endfor%}
                     </ul>
-                    <a href="mailto:hi@sashwat.in" class="theme-btn">
+                    <a href="mailto:{{body.mail_id}}" class="theme-btn">
                         <i class="las la-envelope"></i> Connect!
                     </a>
                 </div>
@@ -234,26 +204,26 @@
                                 <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i class="las la-home"></i> Introduce
                                 </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Say Hi from <span>Sashwat K</span>. I'm an Entrepreneur, Tech head and Biker.</h1>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Say Hi from <span>{{header.title}}</span>. {{body.section.hero.tag_line}}</h1>
                             </div>
-                            <p class="scroll-animation" data-animation="fade_from_bottom">I work on software, spend my free time developing hardware and ride to calm my mind.</p>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">{{body.section.hero.description}}</p>
                             <a href="#portfolio" 
                                 class="go-to-project-btn scroll-to scroll-animation" 
                                 data-animation="rotate_up">
-                                <img src="./assets/images/round-text.png" alt="Rounded Text">
+                                <img src="{{url_for('static', filename='images/round-text.png')}}" alt="Rounded Text">
                                 <i class="las la-arrow-down"></i>
                             </a>
                             <div class="facts d-flex">
                                 <div class="left scroll-animation" data-animation="fade_from_left">
-                                    <h1>40+</h1>
+                                    <h1>{{body.section.hero.flexes.coding_hours}}</h1>
                                     <p><b>Coding Hours</b> <br>average per week</p>
                                 </div>
                                 <div class="right scroll-animation" data-animation="fade_from_right">
-                                    <h1>1K+</h1>
+                                    <h1>{{body.section.hero.flexes.total_commits}}</h1>
                                     <p><b>Total Commits</b><br>average per year</p>
                                 </div>
                                 <div class="right scroll-animation" data-animation="fade_from_right">
-                                    <h1>25+</h1>
+                                    <h1>{{body.section.hero.flexes.total_contributions}}</h1>
                                     <p><b>Total Contributions</b><br>average per year</p>
                                 </div>
                             </div>
@@ -269,12 +239,9 @@
                                 <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i class="lar la-user"></i> About
                                 </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Every great Idea begin with<br>
-                                    an even <span>better story</span></h1>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">{{body.section.about.about_tag_line|safe}}</h1>
                             </div>
-                            <p class="scroll-animation" data-animation="fade_from_bottom">Sashwat is an Entrepreneur, who is currently working in IBM ISDL as Senior Engineer. He helps in development of products for IBM Cloud. He started his career as CAD Engineer at AMD-Xilinx.<br>
-                            During his education period, he involved himself in various activites to develop expertise on Python, Operating Systems and PCB Designing. During this time period, he worked on his Entrepreneur skills by starting and working on multiple startups.<br>
-                            He spends his leture period either upgrading his skills, learning ham radio, contributing open-spurce and biking. He is a SWL in the Ham Radio Community and is a member of <a href="http://www.rasahams.in/">RASA Hams</a> which is based in Thiruvananthapuram, India. He is also a passionate biker who is part of multiple groups like <a href="https://www.instagram.com/thestreettriplers">The Street Triplers</a>, <a href="https://www.instagram.com/the.superbikemafia/">The Superbike Mafia</a>.</p>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">{{body.section.about.about_description|safe}}</p>
                         </div>
                     </div>
                 </section>
@@ -291,43 +258,20 @@
                             </div>
         
                             <div class="resume-timeline">
+                            {%for item in body.section.resume|reverse%}
                                 <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">Jul 2022 - Present</span>
-                                    <h2>Senior Engineer</h2>
-                                    <p>IBM ISDL</p>
+                                    <span class="date">{{body.section.resume[item].timeline}}</span>
+                                    {%if body.section.resume[item].position.__class__.__name__ == 'list'%}
+                                        {%for item1 in range(body.section.resume[item].position|length)%}
+                                            <h2>{{body.section.resume[item].position[item1]}}</h2>
+                                            <p>{{body.section.resume[item].company}}</p>
+                                        {%endfor%}
+                                    {%else%}
+                                        <h2>{{body.section.resume[item].position}}</h2>
+                                        <p>{{body.section.resume[item].company}}</p>
+                                    {%endif%}
                                 </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">Feb 2022 - Jul 2022</span>
-                                    <h2>Silicon Design Engineer</h2>
-                                    <p>AMD</p>
-                                </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">Jun 2020 - Feb 2022</span>
-                                    <h2>CAD Engineer</h2>
-                                    <p>Xilinx</p>
-                                    <h2>CAD Infrastructure DevOps Engineer</h2>
-                                    <p>Xilinx</p>
-                                </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">May 2018 - Sep 2018</span>
-                                    <h2>Intern</h2>
-                                    <p>Appfabs</p>
-                                </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">2017 - 2020</span>
-                                    <h2>Masters in Computer Applications (MCA)</h2>
-                                    <p>College of Engineering Trivandrum</p>
-                                </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">2014 - 2017</span>
-                                    <h2>Bachelors in Computer Applications (BCA)</h2>
-                                    <p>Christ Nagar College</p>
-                                </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">2012 - 2014</span>
-                                    <h2>12th Computer Science</h2>
-                                    <p>Kendriya Vidyalaya A.F.S Akkulam</p>
-                                </div>
+                            {%endfor%}
                             </div>
                         </div>
                     </div>
@@ -345,24 +289,14 @@
                             </div>
         
                             <div class="services-items">
+                                {%for item in body.section.services%}
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-code"></i>
-                                    <h2>Backend Development</h2>
-                                    <p>I have helped in designing backed for products using python and golag.</p>
-                                    <span class="projects">24 Projects</span>
+                                    <i class="las la-{{item.icon}}"></i>
+                                    <h2>{{item.title}}</h2>
+                                    <p>{{item.description}}</p>
+                                    <span class="projects">{{item.project_count}} Projects</span>
                                 </div>
-                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-infinity"></i>
-                                    <h2>DevOps Engineering</h2>
-                                    <p>I have helped setup automation scripts using python and shell and pipeline using DevOps tools.</p>
-                                    <span class="projects">8 Projects</span>
-                                </div>
-                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-microchip"></i>
-                                    <h2>PCB Designing</h2>
-                                    <p>I have designed PCBs for college and open-source projects.</p>
-                                    <span class="projects">10 Projects</span>
-                                </div>
+                                {%endfor%}
                             </div>
         
                         </div>
@@ -381,62 +315,18 @@
                             </div>
         
                             <div class="row skills text-center">
+                                {%for item in body.section.skills%}
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <img src="./assets/images/skills/python.png" alt="Python">
-                                            <h1 class="percent">90%</h1>
+                                            <img src="{{url_for('static', filename='images/skills/')}}{{item.image_path}}" alt="{{item.skill_name}}">
+                                            <h1 class="percent">{{item.proficiency}}</h1>
                                         </div>
-                                        <p class="name">Python</p>
+                                        <p class="name">{{item.skill_name}}</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
-                                    <div class="skill">
-                                        <div class="skill-inner">
-                                            <img src="./assets/images/skills/go.png" alt="GoLang">
-                                            <h1 class="percent">80%</h1>
-                                        </div>
-                                        <p class="name">GoLang</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
-                                    <div class="skill">
-                                        <div class="skill-inner">
-                                            <img src="./assets/images/skills/git.png" alt="git">
-                                            <h1 class="percent">85%</h1>
-                                        </div>
-                                        <p class="name">Git</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
-                                    <div class="skill">
-                                        <div class="skill-inner">
-                                            <img src="./assets/images/skills/docker.png" alt="Docker">
-                                            <h1 class="percent">80%</h1>
-                                        </div>
-                                        <p class="name">Docker</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
-                                    <div class="skill">
-                                        <div class="skill-inner">
-                                            <img src="./assets/images/skills/kubernetes.png" alt="Kubernetes">
-                                            <h1 class="percent">70%</h1>
-                                        </div>
-                                        <p class="name">Kubernetes</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
-                                    <div class="skill">
-                                        <div class="skill-inner">
-                                            <img src="./assets/images/skills/eaglepcb.jpg" alt="EaglePCB">
-                                            <h1 class="percent">80%</h1>
-                                        </div>
-                                        <p class="name">EaglePCB</p>
-                                    </div>
-                                </div>
+                                {%endfor%}
                             </div>
-        
                         </div>
                     </div>
                 </section>
@@ -454,26 +344,25 @@
         
                             <div class="row portfolio-items">
                                 <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    {%for item in body.section.portfolio%}
                                     <div class="portfolio-item portfolio-full">
                                         <div class="portfolio-item-inner">
-                                            <a href="./assets/images/portfolio1.jpg" data-lightbox="example-1">
-                                                <img src="./assets/images/portfolio1.jpg" alt="Portfolio">
+                                            <a href="{{item.project_link}}" data-lightbox="example-1">
+                                                <img src="{{item.project_img_path}}" alt="Portfolio">
                                             </a>
         
                                             <ul class="portfolio-categories">
+                                                {%for item1 in item.tags%}
+
                                                 <li>
-                                                    <a href="">Figma</a>
+                                                    <a href="">{{item1}}</a>
                                                 </li>
-                                                <li>
-                                                    <a href="">Framer</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">WordPress</a>
-                                                </li>
+                                                {%endfor%}
                                             </ul>
                                         </div>
-                                        <h2><a href="">Bureau - Architecture Studio Website</a></h2>
+                                        <h2><a href="{{item.project_link}}" target="_blank">{{item.project_name}}</a></h2>
                                     </div>
+                                    {%endfor%}
                                 </div>
                             </div>
         
@@ -494,54 +383,22 @@
         
                             <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
                                 <div class="owl-carousel testimonial-slider owl-theme">
+                                    {%for item in body.section.testimonials%}
                                     <div class="testimonial-item">
                                         <div class="testimonial-item-inner">
                                             <div class="author d-flex align-items-center">
-                                                <img src="./assets/images/testimonial-1.jpg" alt="portfolio">
+                                                <img src="{{item.photo}}" alt="portfolio">
                                                 <div class="right">
-                                                    <h3>Paublo Dybala</h3>
-                                                    <p class="designation">CEO of <span>IBM Global</span></p>
+                                                    <h3>{{item.username}}</h3>
+                                                    <p class="designation">{{item.designation}}</p>
                                                 </div>
                                             </div>
-                                            <p>“Drake - A Developer with the creativity, professional and 
-                                                master of code. Much more than what i'm expect. 
-                                                High quality product & flexiable price. Recommended!.”</p>
+                                            <p>{{item.statement|safe}}</p>
         
-                                            <a href="" class="project-btn">Project</a>
+                                            <!-- <a href="" class="project-btn">Project</a> -->
                                         </div>
                                     </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-item-inner">
-                                            <div class="author d-flex align-items-center">
-                                                <img src="./assets/images/testimonial-2.jpg" alt="portfolio">
-                                                <div class="right">
-                                                    <h3>Christina Morillo</h3>
-                                                    <p class="designation">Product Management of <span>Invision App Inc</span></p>
-                                                </div>
-                                            </div>
-                                            <p>“Drake was a real pleasure to work with and we look 
-                                                forward to working with him again. He's definitely the kind of 
-                                                designer that you can trust with any project from A-Z.”</p>
-        
-                                            <a href="" class="project-btn">Project</a>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-item-inner">
-                                            <div class="author d-flex align-items-center">
-                                                <img src="./assets/images/testimonial-3.jpg" alt="portfolio">
-                                                <div class="right">
-                                                    <h3>Phil Foden</h3>
-                                                    <p class="designation">Director of <span>Envato LLC</span></p>
-                                                </div>
-                                            </div>
-                                            <p>“Extremely profressional and fast service!. Drake is a master
-                                                of code and he also very creative. We done 3 projects with
-                                                him and certain will continue.”</p>
-        
-                                            <a href="" class="project-btn">Project</a>
-                                        </div>
-                                    </div>
+                                    {%endfor%}
                                 </div>
                                 <div class="testimonial-footer-nav">
                                     <div class="testimonial-nav d-flex align-items-center">
@@ -740,15 +597,15 @@
     </main>
     
 
-    <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/gsap.min.js"></script>
-    <script src="./assets/js/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/ScrollToPlugin.min.js"></script>
-    <script src="./assets/js/lightbox.min.js"></script>
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/owl.carousel.js')}}"></script>
+    <script src="{{url_for('static', filename='js/gsap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/ScrollTrigger.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/ScrollToPlugin.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/lightbox.min.js')}}"></script>
     
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/ajax-form.js"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="{{url_for('static', filename='js/ajax-form.js')}}"></script>
 </body>
 </html>
