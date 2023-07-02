@@ -1,6 +1,3 @@
 .DS_Store
-.env
-data/*
-logs/*
-portfolio_env/*
+portfolio_env
 __pycache__
