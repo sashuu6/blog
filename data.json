@@ -30,7 +30,7 @@
             },
             "about": {
                 "about_tag_line": "Every great Idea begin with<br>an even <span>better story</span>",
-                "about_description": "Sashwat is an Entrepreneur, who is currently working in IBM ISDL as Senior Engineer. He helps in development of products for IBM Cloud. He started his career as CAD Engineer at AMD-Xilinx.<br> During his education period, he involved himself in various activites to develop expertise on Python, Operating Systems and PCB Designing. During this time period, he worked on his Entrepreneur skills by starting and working on multiple startups.<br>He spends his leture period either upgrading his skills, learning ham radio, contributing open-spurce and biking. He is a SWL in the Ham Radio Community and is a member of <a href='http://www.rasahams.in/'>RASA Hams</a> which is based in Thiruvananthapuram, India. He is also a passionate biker who is part of multiple groups like <a href='https://www.instagram.com/thestreettriplers'>The Street Triplers</a>, <a href='https://www.instagram.com/the.superbikemafia/'>The Superbike Mafia</a>"
+                "about_description": "Sashwat is an Entrepreneur, who is currently working in IBM ISDL as Senior Engineer. He helps in development of products for IBM Cloud. He started his career as CAD Engineer at AMD-Xilinx.<br> During his education period, he involved himself in various activites to develop expertise on Python, Operating Systems and PCB Designing. During this time period, he worked on his Entrepreneur skills by starting and working on multiple startups.<br>He spends his leture period either upgrading his skills, learning ham radio, contributing open-spurce and biking. He is a SWL in the Ham Radio Community and is a member of <a href='http://www.rasahams.in/'>RASA Hams</a> which is based in Thiruvananthapuram, India. He is also a passionate biker who is part of multiple groups like <a href='https://www.instagram.com/thestreettriplers'>The Street Triplers</a>, <a href='https://www.instagram.com/the.superbikemafia/'>The Superbike Mafia</a>."
             },
             "resume": {
                 "0": {
@@ -117,24 +117,37 @@
                 },
                 {
                     "skill_name": "EaglePCB",
-                    "image_path": "eaglepcb.png",
+                    "image_path": "eaglepcb.jpg",
                     "proficiency": "80%"
                 }
             ],
             "portfolio": [
                 {
-                    "portfolio_link": "",
-                    "portfolio_img_path": "",
-                    "tags": [],
-                    "github_link": ""
+                    "project_name": "PCB Business Card",
+                    "project_link": "https://github.com/sashuu69/pcb-business-card",
+                    "project_img_path": "https://raw.githubusercontent.com/sashuu69/pcb-business-card/main/docs/pcb_front.jpg",
+                    "tags": ["eaglepcb", "pcb"],
+                    "github_link": "https://github.com/sashuu69/pcb-business-card"
                 }
             ],
             "testimonials": [
                 {
-                    "photo": "",
-                    "username": "",
-                    "designation": "",
-                    "statement": ""
+                    "photo": "https://media.licdn.com/dms/image/D5603AQFP3fXzUU51Cw/profile-displayphoto-shrink_800_800/0/1672634844064?e=1694044800&v=beta&t=GPhvFmyfXFg7olRpl67MG_eGahIXrVgxLK-uuMua14o",
+                    "username": "Rohan Giriraj",
+                    "designation": "Software Engineer @ Autodesk",
+                    "statement": "I've known Sashwat for about 7 years now, dating back to the first year of my undergrad. I've had the pleasure to work with him at Xilinx (now AMD) for about a year. Sashwat is a very hard working, technically sound engineer who ensures that all deliverables are achieved on time and with perfection. He's obsessed with quality and I've had the fortune of having many productive discussions with him on improving my code quality and documentation processes.<br>As a teammate Sashwat is always brimming with optimism and his energy is infectious to others working with him. He has inspired me and other teammates to do better and lead by example. He's always interested in learning the latest tools/languages/frameworks, getting better at the stack he already works on and is always looking to expand his knowledge.<br>Overall, he's a great engineer and above all, a good person."
+                },
+                {
+                    "photo": "https://media.licdn.com/dms/image/C5603AQG8aTUlcYjtaQ/profile-displayphoto-shrink_800_800/0/1621188199276?e=1694044800&v=beta&t=8qFn_okCld5O73nfjZuDorQPaIbJThoOEnDy32lSQ3k",
+                    "username": "Jishnu M",
+                    "designation": "Software Engineer @ ECS Fin",
+                    "statement": "I know Sashwat from our college days and now we are teammates at Xilinx. So I got plenty of chance to work closely with him. He's that kind of a person who's willing to take initiative and responsibility of his work. He's supportive and a good team player. He has also shown his managerial skills by hosting several meetings involving members from different teams. He has worked on several internal projects where his python skills have helped to automate so many tasks as well as develop multiple home brewed tools. He has created several new processes to the team which has added value to the team. One thing I can vouch for him is that he'll be a valuable asset to any team."
+                },
+                {
+                    "photo": "https://media.licdn.com/dms/image/D5603AQF28S_7TtCoJQ/profile-displayphoto-shrink_800_800/0/1675450638206?e=1694044800&v=beta&t=BW_ionv2bTJSjf2-qUqBfofbjrZAUj1ixrgRnTXMEJk",
+                    "username": "Alfin William",
+                    "designation": "DevOps Engineer @ Catalyca",
+                    "statement": "We’ve joined our hands on several projects in college, and Sashwat is one of the best people I had as a partner. I highly recommend his expertise in python and project management. He is one of the profound people I have met, and his ability to tackle any problem is remarkable and with a warm smile. Also, his passion towards IoT and building DIY's related to it is also a commendable feat. I'm sure Sashwat would become an appreciated member of any team."
                 }
             ]
         }
