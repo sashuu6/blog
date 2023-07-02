@@ -1,0 +1,142 @@
+{
+    "header": {
+        "title": "Sashwat K",
+        "meta": {
+            "description": "Welcome to Sashwat K's Website. Sashwat K is a Senior Engineer at IBM ISDL! Cloud Software Developer | FOSS | Linux Enthusiast | Embedded Firmware Developer | DevOps Engineer | Ham Radio Enthusiast",
+            "author": "Sashwat K"
+        }
+    },
+    "body": {
+        "designation": "Senior Engineer, IBM ISDL",
+        "mail_id": "hi@sashwat.in",
+        "address": "Base in Bangalore, India",
+        "copyrights": "2023 Sashwat K. All Rights Reserved",
+        "social_links": {
+            "linkedin": "https://in.linkedin.com/in/sashwatk",
+            "github": "https://github.com/sashuu69",
+            "youtube": "https://www.youtube.com/@sashuu69",
+            "instagram": "https://www.instagram.com/sashuu69",
+            "facebook": "https://facebook.com/@sashuu69"
+        },
+        "section": {
+            "hero": {
+                "tag_line": "an Entrepreneur, Tech head and Biker",
+                "description": "I work on software, spend my free time developing hardware and ride to calm my mind.",
+                "flexes": {
+                    "coding_hours": "40+",
+                    "total_commits": "1K+",
+                    "total_contributions": "25+"
+                }
+            },
+            "about": {
+                "about_tag_line": "Every great Idea begin with<br>an even <span>better story</span>",
+                "about_description": "Sashwat is an Entrepreneur, who is currently working in IBM ISDL as Senior Engineer. He helps in development of products for IBM Cloud. He started his career as CAD Engineer at AMD-Xilinx.<br> During his education period, he involved himself in various activites to develop expertise on Python, Operating Systems and PCB Designing. During this time period, he worked on his Entrepreneur skills by starting and working on multiple startups.<br>He spends his leture period either upgrading his skills, learning ham radio, contributing open-spurce and biking. He is a SWL in the Ham Radio Community and is a member of <a href='http://www.rasahams.in/'>RASA Hams</a> which is based in Thiruvananthapuram, India. He is also a passionate biker who is part of multiple groups like <a href='https://www.instagram.com/thestreettriplers'>The Street Triplers</a>, <a href='https://www.instagram.com/the.superbikemafia/'>The Superbike Mafia</a>"
+            },
+            "resume": {
+                "0": {
+                    "timeline": "2012 - 2014",
+                    "position": "12th Computer Science",
+                    "company": "Kendriya Vidyalaya A.F.S Akkulam"
+                },
+                "1": {
+                    "timeline": "2014 - 2017",
+                    "position": "Bachelors in Computer Applications (BCA)",
+                    "company": "Christ Nagar College"
+                },
+                "2": {
+                    "timeline": "2017 - 2020",
+                    "position": "Masters in Computer Applications (MCA)",
+                    "company": "College of Engineering Trivandrum"
+                },
+                "3": {
+                    "timeline": "May 2018 - Sep 2018",
+                    "position": "Intern",
+                    "company": "Appfabs"
+                },
+                "4": {
+                    "timeline": "Jun 2020 - Feb 2022",
+                    "position": ["CAD Infrastructure DevOps Engineer", "CAD Engineer"],
+                    "company": "Xilinx"
+                },
+                "5": {
+                    "timeline": "Feb 2022 - Jul 2022",
+                    "position": "Silicon Design Engineer",
+                    "company": "AMD"
+                },
+                "6": {
+                    "timeline": "Jul 2022 - Present",
+                    "position": "Senior Engineer",
+                    "company": "IBM ISDL"
+                }
+            },
+            "services": [
+                {
+                    "title": "Backend Development",
+                    "description": "I have helped in designing backed for products using python and golag.",
+                    "project_count": "24",
+                    "icon": "code"
+                },
+                {
+                    "title": "DevOps Engineering",
+                    "description": "I have helped setup automation scripts using python and shell and pipeline using DevOps tools.",
+                    "project_count": "8",
+                    "icon": "infinity"
+                },
+                {
+                    "title": "PCB Designing",
+                    "description": "I have designed PCBs for college and open-source projects.",
+                    "project_count": "10",
+                    "icon": "microchip"
+                }
+            ],
+            "skills": [
+                {
+                    "skill_name": "Python",
+                    "image_path": "python.png",
+                    "proficiency": "90%"
+                },
+                {
+                    "skill_name": "Go Lang",
+                    "image_path": "go.png",
+                    "proficiency": "80%"
+                },
+                {
+                    "skill_name": "Git",
+                    "image_path": "git.png",
+                    "proficiency": "85%"
+                },
+                {
+                    "skill_name": "Docker",
+                    "image_path": "docker.png",
+                    "proficiency": "80%"
+                },
+                {
+                    "skill_name": "Kubernetes",
+                    "image_path": "python.png",
+                    "proficiency": "90%"
+                },
+                {
+                    "skill_name": "EaglePCB",
+                    "image_path": "eaglepcb.png",
+                    "proficiency": "80%"
+                }
+            ],
+            "portfolio": [
+                {
+                    "portfolio_link": "",
+                    "portfolio_img_path": "",
+                    "tags": [],
+                    "github_link": ""
+                }
+            ],
+            "testimonials": [
+                {
+                    "photo": "",
+                    "username": "",
+                    "designation": "",
+                    "statement": ""
+                }
+            ]
+        }
+    }
+}
