@@ -125,9 +125,23 @@
                 {
                     "project_name": "PCB Business Card",
                     "project_link": "https://github.com/sashuu69/pcb-business-card",
-                    "project_img_path": "https://raw.githubusercontent.com/sashuu69/pcb-business-card/main/docs/pcb_front.jpg",
+                    "project_img_path": "pcb-business-card.jpg",
                     "tags": ["eaglepcb", "pcb"],
                     "github_link": "https://github.com/sashuu69/pcb-business-card"
+                },
+                {
+                    "project_name": "IOT Water Level Indicator",
+                    "project_link": "https://github.com/sashuu69/iot-water-level-indicator",
+                    "project_img_path": "iot-water-level-indicator.jpg",
+                    "tags": ["eaglepcb", "pcb", "arduino", "python", "raspberry pi"],
+                    "github_link": "https://github.com/sashuu69/iot-water-level-indicator"
+                },
+                {
+                    "project_name": "Arduino UNO clone for Industrial Purposes",
+                    "project_link": "https://github.com/sashuu69/sph-mc-one",
+                    "project_img_path": "sph-mc-one.jpg",
+                    "tags": ["eaglepcb", "pcb", "atmega"],
+                    "github_link": "https://github.com/sashuu69/sph-mc-one"
                 }
             ],
             "testimonials": [
