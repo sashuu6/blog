@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{header.meta.description}}">
+    <meta name="author" content="{{header.title}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/profile_photo/favicon.png')}}">
+
+    <title>{{header.title}}</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/smooth-scrollbar.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/lightbox.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+
+</head>
+<body class="home1-page">
+
+    <video class="body-overlay" muted autoplay loop>
+        <source src="{{url_for('static', filename='images/video5.mp4')}}" type="video/mp4">
+    </video>
+
+    <!-- Preloader -->
+    <div class="page-loader">
+        <div class="bounceball"></div>
+    </div>
+
+    <span class="icon-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <!-- Side Menu Bar -->
+    <div class="responsive-sidebar-menu">
+        <div class="overlay"></div>
+        <div class="sidebar-menu-inner">
+            <div class="menu-wrap">
+                <p>Menu</p>
+                <ul class="menu scroll-nav-responsive d-flex">
+                    <li>
+                        <a class="scroll-to" href="#home">
+                            <i class="las la-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#about">
+                            <i class="lar la-user"></i> <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#resume">
+                            <i class="las la-briefcase"></i> <span>Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#services">
+                            <i class="las la-stream"></i> <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#skills">
+                            <i class="las la-shapes"></i> <span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#portfolio">
+                            <i class="las la-grip-vertical"></i> <span>Portfolios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#testimonial">
+                            <i class="lar la-comment"></i> <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-social">
+                <p>Social</p>
+                <ul class="social-links d-flex align-items-center">
+                {%for item in body.social_links%}
+                    <li>
+                        <a href="{{body.social_links[item]}}" target="_blank"><i class="lab la-{{item}}"></i></a>
+                    </li>
+                {%endfor%}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu scroll-nav d-flex">
+        <li>
+            <a class="scroll-to" href="#home">
+                <span>Home</span> <i class="las la-home"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#about">
+                <span>About</span> <i class="lar la-user"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#resume">
+                <span>Resume</span> <i class="las la-briefcase"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#services">
+                <span>Services</span> <i class="las la-stream"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#skills">
+                <span>Skills</span> <i class="las la-shapes"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#portfolio">
+                <span>Portfolios</span> <i class="las la-grip-vertical"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#testimonial">
+                <span>Testimonial</span> <i class="lar la-comment"></i>
+            </a>
+        </li>
+    </ul>
+
+    <div class="left-sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <img src="{{url_for('static', filename='images/logo.png')}}" alt="Logo">
+            <span class="designation">{{body.designation}}</span>
+        </div>
+        <img class="me" src="{{url_for('static', filename='images/profile_photo/me.jpg')}}" alt="Me">
+        <h2 class="email">{{body.mail_id}}</h2>
+        <h2 class="address">{{body.address}}</h2>
+        <p class="copyright">&copy; {{body.copyrights}}</p>
+        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+        {%for item in body.social_links%}
+            <li>
+                <a href="{{body.social_links[item]}}" target="_blank"><i class="lab la-{{item}}"></i></a>
+            </li>
+        {%endfor%}
+        </ul>
+        <a href="mailto:{{body.mail_id}}" class="theme-btn">
+            <i class="las la-envelope"></i> Connect!
+        </a>
+    </div>
+    <!-- Main Section -->
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <img src="{{url_for('static', filename='images/logo.png')}}" alt="Logo">
+                        <span class="designation">{{body.designation}}</span>
+                    </div>
+                    <img class="me" src="{{url_for('static', filename='images/profile_photo/me.jpg')}}" alt="Me">
+                    <h2 class="email">{{body.mail_id}}</h2>
+                    <h2 class="address">{{body.address}}</h2>
+                    <p class="copyright">&copy; {{body.copyrights}}</p>
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                    {%for item in body.social_links%}
+                        <li>
+                            <a href="{{body.social_links[item]}}" target="_blank"><i class="lab la-{{item}}"></i></a>
+                        </li>
+                    {%endfor%}
+                    </ul>
+                    <a href="mailto:{{body.mail_id}}" class="theme-btn">
+                        <i class="las la-envelope"></i> Connect!
+                    </a>
+                </div>
+
+                <!-- Hero Section -->
+                <section class="hero-section page-section scroll-to-page" id="home">
+
+                    <div class="custom-container">
+                        <div class="hero-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-home"></i> Introduce
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Say Hi from <span>{{header.title}}</span>. {{body.section.hero.tag_line}}</h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">{{body.section.hero.description}}</p>
+                            <a href="#portfolio" 
+                                class="go-to-project-btn scroll-to scroll-animation" 
+                                data-animation="rotate_up">
+                                <img src="{{url_for('static', filename='images/round-text.png')}}" alt="Rounded Text">
+                                <i class="las la-arrow-down"></i>
+                            </a>
+                            <div class="facts d-flex">
+                                <div class="left scroll-animation" data-animation="fade_from_left">
+                                    <h1>{{body.section.hero.flexes.coding_hours}}</h1>
+                                    <p><b>Coding Hours</b> <br>average per week</p>
+                                </div>
+                                <div class="right scroll-animation" data-animation="fade_from_right">
+                                    <h1>{{body.section.hero.flexes.total_commits}}</h1>
+                                    <p><b>Total Commits</b><br>average per year</p>
+                                </div>
+                                <div class="right scroll-animation" data-animation="fade_from_right">
+                                    <h1>{{body.section.hero.flexes.total_contributions}}</h1>
+                                    <p><b>Total Contributions</b><br>average per year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- About Section -->
+                <section class="about-area page-section scroll-to-page" id="about">
+                    <div class="custom-container">
+                        <div class="about-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-user"></i> About
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">{{body.section.about.about_tag_line|safe}}</h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">{{body.section.about.about_description|safe}}</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- Resume Section -->
+                <section class="resume-area page-section scroll-to-page" id="resume">
+                    <div class="custom-container">
+                        <div class="resume-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-briefcase"></i> Resume
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Education & <span>Experience</span></h1>
+                            </div>
+        
+                            <div class="resume-timeline">
+                            {%for item in body.section.resume|reverse%}
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">{{body.section.resume[item].timeline}}</span>
+                                    {%if body.section.resume[item].position.__class__.__name__ == 'list'%}
+                                        {%for item1 in range(body.section.resume[item].position|length)%}
+                                            <h2>{{body.section.resume[item].position[item1]}}</h2>
+                                            <p>{{body.section.resume[item].company}}</p>
+                                        {%endfor%}
+                                    {%else%}
+                                        <h2>{{body.section.resume[item].position}}</h2>
+                                        <p>{{body.section.resume[item].company}}</p>
+                                    {%endif%}
+                                </div>
+                            {%endfor%}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- Services Section -->
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-stream"></i> Skills
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My <span>Specializations</span></h1>
+                            </div>
+        
+                            <div class="services-items">
+                                {%for item in body.section.services%}
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-{{item.icon}}"></i>
+                                    <h2>{{item.title}}</h2>
+                                    <p>{{item.description}}</p>
+                                    <span class="projects">{{item.project_count}} Projects</span>
+                                </div>
+                                {%endfor%}
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- Skills Section -->
+                <section class="skills-area page-section scroll-to-page" id="skills">
+                    <div class="custom-container">
+                        <div class="skills-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> my skills
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My <span>Advantages</span></h1>
+                            </div>
+        
+                            <div class="row skills text-center">
+                                {%for item in body.section.skills%}
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="{{url_for('static', filename='images/skills/')}}{{item.image_path}}" alt="{{item.skill_name}}">
+                                            <h1 class="percent">{{item.proficiency}}</h1>
+                                        </div>
+                                        <p class="name">{{item.skill_name}}</p>
+                                    </div>
+                                </div>
+                                {%endfor%}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- Portfolio Section -->
+                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div class="custom-container">
+                        <div class="portfolio-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-grip-vertical"></i> portfolio
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Featured <span>Projects</span></h1>
+                            </div>
+        
+                            <div class="row portfolio-items">
+                                {%for item in body.section.portfolio%}
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+
+                                            <img src="{{url_for('static', filename='images/portfolio/')}}{{item.project_img_path}}" alt="Portfolio">
+        
+                                            <ul class="portfolio-categories">
+                                                {%for item1 in item.tags%}
+                                                <li>
+                                                    <a href="">{{item1}}</a>
+                                                </li>
+                                                {%endfor%}
+                                            </ul>
+                                        </div>
+                                        <h2><a href="{{item.project_link}}" target="_blank">{{item.project_name}}</a></h2>
+                                    </div>
+                                </div>
+                                {%endfor%}
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- Testimonial Section -->
+                <section class="testimonial-area page-section scroll-to-page" id="testimonial">
+                    <div class="custom-container">
+                        <div class="testimonial-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-comment"></i> testimonial
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Trusted by <span>Hundered Clients</span></h1>
+                            </div>
+        
+                            <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
+                                <div class="owl-carousel testimonial-slider owl-theme">
+                                    {%for item in body.section.testimonials%}
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="{{item.photo}}" alt="portfolio">
+                                                <div class="right">
+                                                    <h3>{{item.username}}</h3>
+                                                    <p class="designation">{{item.designation}}</p>
+                                                </div>
+                                            </div>
+                                            <p>{{item.statement|safe}}</p>
+        
+                                            <!-- <a href="" class="project-btn">Project</a> -->
+                                        </div>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                                <div class="testimonial-footer-nav">
+                                    <div class="testimonial-nav d-flex align-items-center">
+                                        <button class="prev"><i class="las la-angle-left"></i></button>
+                                        <div id="testimonial-slide-count"></div>
+                                        <button class="next"><i class="las la-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="clients-logos"></div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/owl.carousel.js')}}"></script>
+    <script src="{{url_for('static', filename='js/gsap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/ScrollTrigger.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/ScrollToPlugin.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/lightbox.min.js')}}"></script>
+
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
