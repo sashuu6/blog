@@ -6,6 +6,7 @@
  * Purpose : Host portfolio website using Python Flask
 """
 import json
+import os
 
 from flask import Flask, render_template
 
@@ -24,4 +25,5 @@ def index() -> str:
 
 
 if __name__ == "__main__":
-    app.run(threaded=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(threaded=True, host='0.0.0.0', port=port)
