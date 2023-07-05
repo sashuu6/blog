@@ -333,17 +333,15 @@
                             </div>
         
                             <div class="row portfolio-items">
-                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                    {%for item in body.section.portfolio%}
-                                    <div class="portfolio-item portfolio-full">
+                                {%for item in body.section.portfolio%}
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
                                         <div class="portfolio-item-inner">
-                                            <a href="{{item.project_link}}" data-lightbox="example-1">
-                                                <img src="{{item.project_img_path}}" alt="Portfolio">
-                                            </a>
+
+                                            <img src="{{url_for('static', filename='images/portfolio/')}}{{item.project_img_path}}" alt="Portfolio">
         
                                             <ul class="portfolio-categories">
                                                 {%for item1 in item.tags%}
-
                                                 <li>
                                                     <a href="">{{item1}}</a>
                                                 </li>
@@ -352,8 +350,8 @@
                                         </div>
                                         <h2><a href="{{item.project_link}}" target="_blank">{{item.project_name}}</a></h2>
                                     </div>
-                                    {%endfor%}
                                 </div>
+                                {%endfor%}
                             </div>
         
                         </div>
