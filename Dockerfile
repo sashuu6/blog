@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # configure the container to run in an executed manner
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "sh" ]
 
-# python script name
-CMD ["app.py" ]
+# runner script name
+CMD [ "runner.sh" ]
