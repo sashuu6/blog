@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  # Nginx as reverse proxy
+  reverse_proxy:
+    build:
+      context: ./bin/reverse_proxy
+    container_name: portfolio_reverse_proxy
+    depends_on:
+      - portfolio_webserver
+    volumes:
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./config/ssl/sashwat.in.crt:/etc/ssl/certs/nginx/sashwat.in.crt
+      - ./config/ssl/sashwat.in.key:/etc/ssl/certs/nginx/sashwat.in.key
+    ports:
+      - 80:80
+      - 443:443
+  
+  # Flask App
+  portfolio_webserver:
+    build:
+      context: ./bin/portfolio_webserver
+    container_name: portfolio_webserver
+    restart: on-failure
