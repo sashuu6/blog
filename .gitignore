@@ -1,3 +1,4 @@
 .DS_Store
 portfolio_env
 __pycache__
+config/ssl/
