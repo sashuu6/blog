@@ -1,0 +1,42 @@
+<mxfile host="Electron" modified="2023-07-24T16:16:46.402Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="iYu9kQEpy5DSbgDbx4zp" version="21.6.5" type="device">
+  <diagram name="Page-1" id="lHAVEcqJ95goZjDKrxFf">
+    <mxGraphModel dx="1114" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="blIA7EfqXGv8wQ27abYy-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="370" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="280" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Docker&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="blIA7EfqXGv8wQ27abYy-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-4" value="&lt;b&gt;Container 1&lt;/b&gt;&lt;br&gt;&lt;br&gt;Reverse Proxy&lt;br&gt;(reverse_proxy)&lt;br&gt;&lt;br&gt;Nginx" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="570" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="blIA7EfqXGv8wQ27abYy-5" target="blIA7EfqXGv8wQ27abYy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-5" value="&lt;b&gt;Container 2&lt;/b&gt;&lt;br&gt;&lt;br&gt;Portfolio Webserver&lt;br&gt;(portfolio_webserver&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;br&gt;&lt;br&gt;Python Flask&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="720" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-9" value="Port: 80 &amp;amp; 443" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="590" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-11" value="Port: 6969" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="690" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="blIA7EfqXGv8wQ27abYy-15" value="Server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
