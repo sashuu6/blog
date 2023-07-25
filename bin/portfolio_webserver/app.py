@@ -10,8 +10,8 @@ import json
 from flask import Flask, render_template
 
 
-JSONDATA = open("data.json")
-DICTDATA = json.load(JSONDATA)
+with open("data.json", encoding="UTF-8") as JSONDATA:
+    DICTDATA = json.load(JSONDATA)
 
 
 app = Flask(__name__, template_folder="template")
