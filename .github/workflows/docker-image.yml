@@ -14,5 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build Portfolio Webserver Dockerfile
+      run: docker build bin/portfolio_webserver --file Dockerfile --tag portfolio_webserver:$(date +%s)
+    - name: Build Reverse Proxy Dockerfile
+      run: docker build bin/reverse_proxy --file Dockerfile --tag reverse_proxy:$(date +%s)
+    - name: Build the Docker compose YAML file
       run: docker compose build
