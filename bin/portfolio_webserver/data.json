@@ -9,7 +9,7 @@
     "body": {
         "designation": "Senior Engineer, IBM ISDL",
         "mail_id": "hi@sashwat.in",
-        "address": "Base in Bangalore, India",
+        "address": "Based in Bangalore, India",
         "copyrights": "2023 Sashwat K. All Rights Reserved",
         "social_links": {
             "linkedin": "https://in.linkedin.com/in/sashwatk",
@@ -20,17 +20,17 @@
         },
         "section": {
             "hero": {
-                "tag_line": "an Entrepreneur, Tech head and Biker",
-                "description": "I work on software, spend my free time developing hardware and ride to calm my mind.",
+                "tag_line": "An Entrepreneur, Tech Enthusiast, and Biker.",
+                "description": "Sashwat's expertise lies in software as he invests his time diligently in its development. During his free hours, he graciously imparts knowledge and indulges in crafting hardware projects. To soothe his mind and find tranquility, he takes pleasure in the therapeutic activities of biking and cycling.",
                 "flexes": {
                     "coding_hours": "40+",
-                    "total_commits": "1K+",
+                    "total_commits": "500+",
                     "total_contributions": "25+"
                 }
             },
             "about": {
                 "about_tag_line": "Every great Idea begin with<br>an even <span>better story</span>",
-                "about_description": "Sashwat is an Entrepreneur, who is currently working in IBM ISDL as Senior Engineer. He helps in development of products for IBM Cloud. He started his career as CAD Engineer at AMD-Xilinx.<br> During his education period, he involved himself in various activites to develop expertise on Python, Operating Systems and PCB Designing. During this time period, he worked on his Entrepreneur skills by starting and working on multiple startups.<br>He spends his leture period either upgrading his skills, learning ham radio, contributing open-spurce and biking. He is a SWL in the Ham Radio Community and is a member of <a href='http://www.rasahams.in/'>RASA Hams</a> which is based in Thiruvananthapuram, India. He is also a passionate biker who is part of multiple groups like <a href='https://www.instagram.com/thestreettriplers'>The Street Triplers</a>, <a href='https://www.instagram.com/the.superbikemafia/'>The Superbike Mafia</a>."
+                "about_description": "Sashwat, an enterprising individual, currently holds the esteemed position of Senior Engineer at IBM ISDL, where he actively contributes to the development of products for IBM Cloud. His professional journey began as a CAD Infrastructure DevOps Engineer at Xilinx Inc.<br>Throughout his educational tenure, he immersed himself in various activities to hone his expertise in Python, Operating Systems, and PCB Designing. In parallel, he nurtured his entrepreneurial acumen by initiating and working on multiple startup ventures.<br>During his leisure time, Sashwat embraces a continuous pursuit of growth, dedicating himself to upgrading his skills, exploring ham radio, contributing to open source projects, and indulging in biking adventures. He is recognized as an SWL in the Ham Radio Community and holds membership in the esteemed group, <a href='http://www.rasahams.in/'>RASA Hams</a>, situated in Thiruvananthapuram, India. His passion for biking is evident as he actively participates in multiple biking groups, including <a href='https://www.instagram.com/thestreettriplers'>The Street Triplers</a> and <a href='https://www.instagram.com/the.superbikemafia/'>The Superbike Mafia</a>, as showcased on his Instagram accounts."
             },
             "resume": {
                 "0": {
