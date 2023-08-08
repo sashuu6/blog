@@ -1,0 +1,3 @@
+[submodule "bin/portfolio_webserver"]
+	path = bin/portfolio_webserver
+	url = git@github.com:sashuu69/portfolio_website.git
