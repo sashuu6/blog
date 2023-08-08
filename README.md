@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the code to host personal portfolio website. 
+This repository contains the code to host personal portfolio website using docker compose. 
 
 ## Architecture
 
@@ -24,18 +24,11 @@ This repository contains the code to host personal portfolio website.
 
 ## Technologies Used
 
-1. Frontend - HTML, CSS, Javascript, Bootstrap
-2. Backend - Python Flask
+1. Portfolio Webserver - Python Alpine
 3. Reverse Proxy - Nginx
 4. Docker compose used to create multi container application
 
-## Development Setup
-
-1. Make sure Python3, pip3 and virtualenv is installed on the development setup.
-2. Create python virtual environment using the command `virtualenv portfolio_env`.
-3. Active the virtual environment using the command `source portfolio_env/bin/activate`.
-4. Install necessary python packages using the command `pip3 install -r bin/portfolio_webserver/requirements.txt`.
-5. To run the flask app, run the command `python3 bin/portfolio_webserver/app.py`.
+For imformation regarding the flask webpage, refer the link [sashuu69/portfolio_website](https://github.com/sashuu69/portfolio_website).
 
 ## Contributors
 
