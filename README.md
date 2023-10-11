@@ -1,5 +1,9 @@
 # Portfolio Website
 
+## Status
+![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fsashwat.in)
+[![Docker Compose Build CI](https://github.com/sashuu69/portfolio-website-docker-compose/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/sashuu69/portfolio-website-docker-compose/actions/workflows/docker-image.yml)
+
 ## Introduction
 
 This repository contains the code to host personal portfolio website using docker compose. 
