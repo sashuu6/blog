@@ -21,13 +21,17 @@ This repository contains the code to host personal portfolio website using docke
 
 1. Clone the repository under `bin/portfolio_webserver`.
     
-    ```bash
-    git clone https://github.com/sashuu69/portfolio_site.git bin/portfolio_webserver
-    ```
-3. Create an SSL certificate using the command `sudo certbot certonly --standalone -d <Host URL> -d www.<Host URL>`.
-4. Copy the SSL certificates under `config/ssl` and update `docker-compose.yaml` to connect the SSL certificates.
-5. Build using the command `docker compose build` or `docker-compose build`.
-6. Bring up the containers using the command `docker compose up -d` or `docker-compose up  -d`.
+   ```bash
+   git clone https://github.com/sashuu69/portfolio_site.git bin/portfolio_webserver
+   ```
+3. Create an SSL certificate using the command
+
+   ```bash
+   sudo certbot certonly --standalone -d <Host URL> -d www.<Host URL>
+   ```
+5. Copy the SSL certificates under `config/ssl` and update `docker-compose.yaml` to connect the SSL certificates.
+6. Build using the command `docker compose build` or `docker-compose build`.
+7. Bring up the containers using the command `docker compose up -d` or `docker-compose up  -d`.
 
 ## Technologies Used
 
