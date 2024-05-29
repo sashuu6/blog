@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This repository contains the code to host personal portfolio website using docker compose. 
+This repository contains the code to host a personal portfolio website using docker compose. 
 
 ## Architecture
 
@@ -37,9 +37,9 @@ This repository contains the code to host personal portfolio website using docke
 
 1. Portfolio Webserver - Python Alpine
 3. Reverse Proxy - Nginx
-4. Docker compose is used to create multi-container application
+4. Docker compose is used to create a multi-container application
 
-For information about the flask webpage, please refer to the link [sashu69/portfolio_website](https://github.com/sashuu69/portfolio_website).
+For information about the Flask webpage, please refer to the link [sashu69/portfolio_website](https://github.com/sashuu69/portfolio_website).
 
 ## Contributors
 
@@ -50,3 +50,8 @@ For information about the flask webpage, please refer to the link [sashu69/portf
 If you face any bugs or want to request a new feature, please create an issue under the repository and provide appropriate labels respectively. If you want to do these by yourself, feel free to raise a PR and I will do what is necessary.
 
 If you want to support me, donations will be helpful.
+
+## Other Repo(s)
+
+1. [sashuu69/portfolio-website](https://github.com/sashuu69/portfolio-website) - The portfolio website flask app
+2. [sashuu69/portfolio-website-infrastructure](https://github.com/sashuu69/portfolio-website-infrastructure) - The terraform and ansible code to bring portfolio website on AWS
