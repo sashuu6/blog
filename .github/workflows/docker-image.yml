@@ -13,8 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Checkout submodules
-      run: git submodule update --init --recursive
-    - name: Build the Docker image
+    - name: Checkout portfolio-website-docker-compose
+      uses: actions/checkout@v3
+
+    - name: Checkout porfolio-website under ./bin/portfolio_webserver
+      uses: actions/checkout@v3
+      with:
+        repository: sashuu69/portfolio-website
+        path: ./bin/portfolio_webserver
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build the Docker Compose application
       run: docker compose build
