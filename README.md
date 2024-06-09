@@ -31,7 +31,8 @@ This repository contains the code to host a personal portfolio website using doc
    ```
 5. Copy the SSL certificates under `config/ssl` and update `docker-compose.yaml` to connect the SSL certificates.
 6. Build using the command `docker compose build` or `docker-compose build`.
-7. Bring up the containers using the command `docker compose up -d` or `docker-compose up  -d`.
+7. Bring up the containers using the command `./scripts/deploy.sh <domain-name>`.
+8. (Optional) Bring down the containers using the command `./scripts/destroy.sh <domain-name>`.
 
 ## Technologies Used
 
