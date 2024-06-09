@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 directory="bin/portfolio_webserver"
 
 echo "[INFO] check if $directory exists..."
